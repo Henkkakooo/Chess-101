@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Openings</title>
+    <link rel="stylesheet" href="openings.css">
+</head>
+<body>
+    <div class="bg"></div>
+    
+    <ul id="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="openings.html">Openings</a></li>
+        <li><a href="rules.html">Rules</a></li>
+        <li><a href="strategy.html">Strategy</a></li>
+        <li><a href="professionals.html">Professionals</a></li>
+       </ul>
+
+       <form>
+        <label>
+            Here you will learn the basic openings of chess!
+        </label>
+<button class="button" id="openingsWhite">Openings with white</button>
+<button class="button" id="openingsBlack">Openings with black</button>
+       </form>
+       <form id="whiteOp" style="display: none;">
+        <button class="button" id="londonBtn">London System</button>
+        <button class="button" id="gambitBtn">Queens Gambit</button>
+        <button class="button" id="lopezBtn">Ruy Lopez</button>
+       </form>
+       <form id="blackOp" style="display: none;">
+        <button class="button" id="kannBtn">Caro-Kann Defence</button>
+        <button class="button" id="knightsBtn">Two Knigths Defence</button>
+        <button class="button" id="indianBtn">King's indian Defence</button>
+
+    </form>
+    <form id="formL" style="display: none;">
+       <header>
+        London system
+       </header>
+       <p>"The London System is an opening system in chess where White opens with 1.d4 and develops the dark-squared bishop to f4, then supports the d4-pawn with pawns on e3 and c3. The other bishop is developed to d3 (or occasionally e2) and the knights typically to f3 and d2. This set-up often results in a closed game. The London System can be used against virtually any Black defence and thus comprises a smaller body of opening theory than many other openings. Although it has a reputation as a solid opening, the London System has faced criticism for its tedious nature and lack of dynamic play." -Wikipedia
+    </p>
+    <div>
+        <img id="london1" src="london1.PNG" >
+        <p>The starting position.</p>
+        <img src="london2.PNG">
+        <p>White starts with e4, black respongs with e5.</p>
+        <img src="london3.PNG" >
+        <p>Both white and black bring out their king-sided horses.</p>
+        <img src="london4.PNG" >
+        <p>White brings out their dark-squared bishop to f4.</p>
+        <img src="london5.PNG" >
+        <p>Here you can see the London System's developmental goal with the pawns creating an arrow-like configuration. </p>
+    </div>
+    
+    
+    
+    </form>
+    <form id="formQ" style="display: none;">Queens Gambit</form>
+    <form id="formR" style="display: none;">Ruy Lopez</form>
+    <form id="formC" style="display: none;">Caro-Kann Defence</form>
+    <form id="formK" style="display: none;">Two Knigths Defence</form>
+    <form id="formI" style="display: none;">King's indian Defence</form>
+
+    
+    <script src="openings.js"></script>
+</body>
+</html>
