@@ -1,4 +1,5 @@
 
+
 body {
     background-color: rgb(250, 241, 228);
 }
@@ -8,7 +9,7 @@ body {
     font-family: Arial, sans-serif;
   }
 
-li {
+  li {
     float: left;
     
 }
@@ -17,13 +18,15 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
     transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: 0.5s background-color;
 }
 li a:hover{
-    background-color: #948ced;
+    background-color: rgb(158, 179, 132);
     cursor: pointer;
+    transition-delay: 0.07s;
 }
 li a:active{
-    
+    background-color: rgb(158, 179, 132);
     opacity: 70%;
     transform:scale(0.9);
     
@@ -35,7 +38,9 @@ ul {
     padding: 0;
     overflow: hidden;
     border-radius: 10px;
+    
 }
+
 
 
 
@@ -43,11 +48,18 @@ form {
     background-color: rgb(158, 179, 132);
     border-radius: 10px;
     margin: 0 auto;
-    margin-top: 50px;
-    max-width: 300px;
+    margin-top: 30px;
+    max-width: 600px;
     padding: 20px;
     justify-content: space;
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    opacity: 90%;
   }
+form:hover{
+    transform: scale(0.99);
+    opacity: 110%;
+}
+
 label {
     display: block;
     margin-bottom: 10px;
@@ -61,6 +73,30 @@ label {
     padding: 5px;
     border-radius: 5px;
     cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.button:hover{
+    background-color: rgb(98, 114, 77);
+    cursor: pointer;
+}
+.button:active{
+    background-color: rgb(18, 90, 52);
+    opacity: 70%;
+    transform:scale(0.9);
+    
+}
 
 
+img {
+    
+    width: 100%;
+    height: 100%;
+}
+.banner{
+    max-width: 27%;
+    max-height: 46.4px;
+    border: none;
+    overflow: hidden;
+    margin-top: 0 auto;
+    margin-bottom: 2px;
 }

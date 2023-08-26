@@ -18,10 +18,12 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
     transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: 0.5s background-color;
 }
 li a:hover{
     background-color: rgb(158, 179, 132);
     cursor: pointer;
+    transition-delay: 0.07s;
 }
 li a:active{
     background-color: rgb(158, 179, 132);
@@ -36,6 +38,7 @@ ul {
     padding: 0;
     overflow: hidden;
     border-radius: 10px;
+    
 }
 
 
@@ -98,7 +101,29 @@ label {
 
 
 img {
-    padding: 5px;
+    
     width: 100%;
     height: 100%;
+}
+.banner{
+    padding: none;
+    max-width: 27%;
+    max-height: 46.4px;
+    border: none;
+    overflow: hidden;
+    margin-top: 0 auto;
+    margin-bottom: 2px;
+}
+
+#buttons{
+    justify-content: center;
+    display: flex;
+    max-width: 50%;
+    text-align: above;
+    margin: 20 auto;
+}
+#setup p {
+    text-align: center;
+    margin: 10px auto;
+    font-size: 20px;
 }

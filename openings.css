@@ -9,7 +9,7 @@ body {
     font-family: Arial, sans-serif;
   }
 
-li {
+  li {
     float: left;
     
 }
@@ -18,10 +18,12 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
     transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: 0.5s background-color;
 }
 li a:hover{
     background-color: rgb(158, 179, 132);
     cursor: pointer;
+    transition-delay: 0.07s;
 }
 li a:active{
     background-color: rgb(158, 179, 132);
@@ -36,7 +38,9 @@ ul {
     padding: 0;
     overflow: hidden;
     border-radius: 10px;
+    
 }
+
 
 
 
@@ -49,10 +53,13 @@ form {
     padding: 20px;
     justify-content: space;
     transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    opacity: 90%;
   }
 form:hover{
     transform: scale(0.99);
+    opacity: 110%;
 }
+
 label {
     display: block;
     margin-bottom: 10px;
@@ -81,6 +88,15 @@ label {
 
 
 img {
+   
     width: 100%;
     height: 100%;
+}
+.banner{
+    max-width: 27%;
+    max-height: 46.4px;
+    border: none;
+    overflow: hidden;
+    margin-top: 0 auto;
+    margin-bottom: 2px;
 }
