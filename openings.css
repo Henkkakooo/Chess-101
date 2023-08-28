@@ -93,10 +93,16 @@ img {
     height: 100%;
 }
 .banner{
-    max-width: 27%;
-    max-height: 46.4px;
+    margin: 5px;
+    width: 27%;
+    height: 46.4px;
     border: none;
     overflow: hidden;
     margin-top: 0 auto;
     margin-bottom: 2px;
+}
+.banner img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit:contain ;
 }
