@@ -1,12 +1,12 @@
 
 
 body {
-    background-color: rgb(250, 241, 228);
+    background-color: rgb(250, 240, 230);
 }
 * {
-    color: rgb(248, 252, 248);
+    color: #1c1a16;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Gotham-Bold, sans-serif;
   }
 
   li {
@@ -21,18 +21,18 @@ li a {
     transition: 0.5s background-color;
 }
 li a:hover{
-    background-color: rgb(158, 179, 132);
+    background-color: #c1946c;
     cursor: pointer;
     transition-delay: 0.07s;
 }
 li a:active{
-    background-color: rgb(158, 179, 132);
+    background-color:  #d6ad89;
     opacity: 70%;
     transform:scale(0.9);
     
 }
 ul {
-    background-color: rgb(67, 83, 52);
+    background-color:#b18863;
     list-style-type: none; 
     margin: 0;
     padding: 0;
@@ -45,7 +45,7 @@ ul {
 
 
 form {
-    background-color: rgb(158, 179, 132);
+    background-color: #e4d1b0;
     border-radius: 10px;
     margin: 0 auto;
     margin-top: 30px;
@@ -69,18 +69,18 @@ label {
     margin: 5px;
     border:none;
     text-decoration: none;
-    background-color:rgb(67, 83, 52);
+    background-color:#b18863;
     padding: 5px;
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .button:hover{
-    background-color: rgb(98, 114, 77);
+    background-color:#bf9169;
     cursor: pointer;
 }
 .button:active{
-    background-color: rgb(18, 90, 52);
+    background-color:#d0a47d;
     opacity: 70%;
     transform:scale(0.9);
     
@@ -126,11 +126,13 @@ img {
     flex-direction: column;
     text-align: left;
     align-items: center;
+    border-radius: 5px;
     
 }
 .imgq{
     max-width: 150%;
     height: auto;
+    border-radius: 5px;
 }
 #openings label{
     font-size: 18px;
