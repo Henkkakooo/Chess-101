@@ -1,4 +1,7 @@
-
+@font-face{
+    src: url(Circular\ Font\ Family/);
+    font-family: Gotham;
+}
 
 body {
     background-color: rgb(250, 240, 230);
@@ -6,7 +9,7 @@ body {
 * {
     color: #1c1a16;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Gotham, sans-serif;
   }
 
   li {

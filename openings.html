@@ -19,9 +19,9 @@
     </ul>
 
     <form id="openings">
-        <label>
+        <header>
             Here you will learn the basic openings of chess!
-        </label>
+        </header>
         <p>
             The purpose of these informing, theoretic openings are to
             create a foundation from which to develop your pieces.
@@ -120,7 +120,29 @@
                 </div>
             </div>
     </form>
-    <form id="formR" style="display: none;">Ruy Lopez</form>
+    <form id="formR" style="display: none">
+        <div class="lopez">
+            <div class="slide Lopez">
+                <img src="lopez1.PNG" alt="">
+            </div>
+            <div class="slide Lopez">
+                <img src="lopez2.PNG" alt="">
+            </div>
+            <div class="slide Lopez">
+                <img src="lopez3.PNG" alt="">
+            </div>
+            <div class="slide Lopez">
+                <img src="lopez4.PNG" alt="">
+            </div>
+            <div class="slide Lopez">
+                <img src="lopez5.PNG" alt="">
+            </div>
+            <div class="controlBtns">
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+        </div>
+    </form>
     <form id="formC" style="display: none;">Caro-Kann Defence</form>
     <form id="formK" style="display: none;">Two Knigths Defence</form>
     <form id="formI" style="display: none;">King's indian Defence</form>
