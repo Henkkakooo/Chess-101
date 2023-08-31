@@ -97,27 +97,48 @@ BtnB.addEventListener("click", function(e){
     
 });
 
-let slideIndex = 0;
-showSlide(slideIndex);
+let slideIndex1 = 0;
+showSlide(slideIndex1);
 
 function changeSlide(n) {
-    showSlide(slideIndex += n);
+    showSlide(slideIndex1 += n);
 }
 
 function showSlide(n) {
-    let slides = document.getElementsByClassName("slide");
+    let slides = document.getElementsByClassName("slideL");
     if (n >= slides.length) {
-        slideIndex = 0;
+        slideIndex1 = 0;
     } else if (n < 0) {
-        slideIndex = slides.length - 1;
+        slideIndex1 = slides.length - 1;
     }
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-    slides[slideIndex].style.display = "block";
+    slides[slideIndex1].style.display = "block";
+    window.scrollTo(0, document.body.scrollHeight);
 }
 
-    
+let slideIndex2 = 0;
+showSlide2(slideIndex2);
+
+function changeSlide2(a) {
+    showSlide2(slideIndex2 += a);
+}
+
+function showSlide2(a) {
+    let slides2 = document.getElementsByClassName("slideQ");
+    if (a >= slides2.length) {
+        slideIndex2 = 0;
+    } else if (a < 0) {
+        slideIndex2 = slides2.length - 1;
+    }
+    for (let j = 0; j < slides2.length; j++) {
+        slides2[j].style.display = "none";
+    }
+    slides2[slideIndex2].style.display = "block";
+    window.scrollTo(0, document.body.scrollHeight);
+}
+
     
     
 

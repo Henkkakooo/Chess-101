@@ -80,66 +80,108 @@
                 </div>
             </div>
     </form>
-    <form id="formQ" style="display: none;">
-        <header>
-            Queen's Gambit
-        </header>
+    <form id="formQ" style="display: none;" class="openingContainer">
             <div class="queens">
-                <div class="item">
+                
+                
+                <header>
+                    Queen's Gambit
+                </header>
+                <div class="controlBtns">
+                    <a class="prev" onclick="changeSlide2(-1)"title="Show the previous move">&#10094;Previous</a>
+                    <a class="next" onclick="changeSlide2(1)" title="Show the next move">Next&#10095;</a>
+                </div>
+                <div class="slideQ">
+                    <p>
+                        1. Queen's Gambit start with pawn to d4.
+                    </p>
                     <img class="imgq" src="queens1.PNG" alt="">
-                    <p>
-                        Queen's Gambit start with pawn to d4.
-                    </p>
                 </div>
-                <div class="item">
+                <div class="slideQ">
+                    <p>
+                        2. Black responds with d5.
+                    </p>
                     <img class="imgq" src="queens2.PNG" alt="">
-                    <p>
-                        Black's usual response is d5 to which white responds with c4
-                    </p>
                 </div>
-                <div class="item">
+                <div class="slideQ">
+                    <p>
+                        3. White continues with c4, gambiting a pawn.
+                    </p>
                     <img class="imgq" src="queens3.PNG" alt="">
-                    <p>
-                        In the accepted variation black accepts the gambit with dxc4 and white 
-                        can open up the diagonal for the light-scored bishop with e3.
-                    </p>
                 </div>
-                <div class="item">
+                <div class="slideQ">
+                    <p>
+                        4. Black can now accept the gambit and take the pawn. Let's see what happens
+                    </p>
                     <img class="imgq" src="queens4.PNG" alt="">
-                    <p>
-                        White proceeds to take the d4 pawn and both resume to normal development.
-                    </p>
                 </div>
-                    <div class="item">
-                    <img class="imgq"src="queensd1.PNG" alt="">
+                <div class="slideQ">
                     <p>
-                        Black can also decline the gambit with enforcing their pawn structure.
-                        This often leads to both side developing their pieces normally
-                        with the c4 pawn creating pressure on the center.
+                        5. White opens up the diagonal for their light-squared bishop with e3 creating a threat to black.
                     </p>
+                    <img class="imgq" src="queens5.PNG" alt="">
+                </div>
+                <div class="slideQ">
+                    <p>
+                        6. If black doesn't defend the pawn, white can simply take and continue development.
+                    </p>
+                    <img class="imgq" src="queens6.PNG" alt="">
+                </div>
+                <div class="slideQ">
+                    <p>
+                        7. White takes the c4 pawn. Now both players can continue their development.
+                    </p>
+                    <img class="imgq" src="queens7.PNG" alt="">
+                </div>
+                <div class="slideQ">
+                    <p>
+                        8. In the declined variation, black doesn't take on c4, instead proceeds to develop their pieces.
+                        After the gambit is declined, white can resume on their development.
+                    </p>
+                    <img class="imgq"src="queensd1.PNG" alt="">
                 </div>
             </div>
     </form>
-    <form id="formR" style="display: none">
+    <form id="formR" style="display: none" class="openingContainer">
         <div class="lopez">
-            <div class="slide Lopez">
-                <img src="lopez1.PNG" alt="">
-            </div>
-            <div class="slide Lopez">
-                <img src="lopez2.PNG" alt="">
-            </div>
-            <div class="slide Lopez">
-                <img src="lopez3.PNG" alt="">
-            </div>
-            <div class="slide Lopez">
-                <img src="lopez4.PNG" alt="">
-            </div>
-            <div class="slide Lopez">
-                <img src="lopez5.PNG" alt="">
-            </div>
             <div class="controlBtns">
-                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                <a class="prev" onclick="changeSlide(-1)"title="Show the previous move">&#10094;Previous</a>
+                <a class="next" onclick="changeSlide(1)" title="Show the next move">Next&#10095;</a>
+            </div>
+                <header>
+                    Ruy Lopéz
+                </header>
+            <div class="slideL">
+                <p>
+                    1. The White opens with e4 and black responds with e5.
+                </p>
+                <img src="lopez1.PNG" >  
+            </div>
+            <div class="slideL">
+                <p>
+                    2. White threatens the e5 pawn.
+                </p>
+                <img src="lopez2.PNG" >
+            </div>
+            <div class="slideL">
+                <p>
+                    3. Black defends the e5 pawn.
+                </p>
+                <img src="lopez3.PNG" >
+            </div>
+            <div class="slideL">
+                <p>
+                    4. White pins the knight on c6. The Ruy Lopéz- opening is complete.
+                </p>
+                <img src="lopez4.PNG">
+            </div>
+            <div class="slideL">
+                <p>
+                    5. Black's usual response is to kick the bishop out. White
+                    can simply retreat to a4 etc. Otherwise White will keep pinning the knight
+                    and continue their development.
+                </p>
+                <img src="lopez5.PNG" >
             </div>
         </div>
     </form>
