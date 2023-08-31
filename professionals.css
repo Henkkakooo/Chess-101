@@ -48,7 +48,7 @@ form {
     border-radius: 10px;
     margin-left: 200px;
     margin-top: 30px;
-    max-width: 700px;
+    max-width: 40%;
     padding: 20px;
     justify-content: space;
     
@@ -90,14 +90,13 @@ img {
 .banner{
     margin: 5px;
     width: 27%;
-    height: 46.4px;
     border: none;
     overflow: hidden;
     margin-top: 0 auto;
     margin-bottom: 2px;
 }
 .banner img{
-    max-width: 100%;
+    max-width: 40%;
     max-height: 100%;
     object-fit:contain ;
 }

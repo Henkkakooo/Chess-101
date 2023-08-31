@@ -11,6 +11,7 @@ londonBtn.addEventListener("click", function(e){
     formL.style.display = formL.style.display === "none" ? "block": "none";
     formQ.style.display = "none";
     formR.style.display = "none";
+    window.scrollTo(0, document.body.scrollHeight);
 });
 
 gambitBtn.addEventListener("click", function(e){
@@ -19,6 +20,7 @@ gambitBtn.addEventListener("click", function(e){
     formQ.style.display = formQ.style.display === "none" ? "block": "none";
     formL.style.display = "none";
     formR.style.display = "none";
+    window.scrollTo(0, document.body.scrollHeight);
 });
     
 lopezBtn.addEventListener("click", function(e){
@@ -27,6 +29,7 @@ lopezBtn.addEventListener("click", function(e){
     formR.style.display = formR.style.display === "none" ? "block": "none";
     formL.style.display = "none";
     formQ.style.display = "none";
+    window.scrollTo(0, document.body.scrollHeight);
 });
 
 
@@ -44,6 +47,7 @@ kannBtn.addEventListener("click", function(e){
     formC.style.display = formC.style.display === "none" ? "block": "none";
     formK.style.display = "none";
     formI.style.display = "none";
+    window.scrollTo(0, document.body.scrollHeight);
 });
 
 knightsBtn.addEventListener("click", function(e){
@@ -52,6 +56,7 @@ knightsBtn.addEventListener("click", function(e){
     formK.style.display = formK.style.display === "none" ? "block": "none";
     formC.style.display = "none";
     formI.style.display = "none";
+    window.scrollTo(0, document.body.scrollHeight);
 });
 
 indianBtn.addEventListener("click", function(e){
@@ -60,6 +65,7 @@ indianBtn.addEventListener("click", function(e){
     formI.style.display = formI.style.display === "none" ? "block": "none";
     formC.style.display = "none";
     formK.style.display = "none";
+    window.scrollTo(0, document.body.scrollHeight);
 });
 
 
@@ -79,6 +85,7 @@ BtnW.addEventListener("click", function(e){
     formQ.style.display = "none";
     formR.style.display = "none";
     formL.style.display = "none";
+    window.scrollTo(0, document.body.scrollHeight);
 });
 
 BtnB.addEventListener("click", function(e){
@@ -92,6 +99,7 @@ BtnB.addEventListener("click", function(e){
     formQ.style.display = "none";
     formR.style.display = "none";
     formL.style.display = "none";
+    window.scrollTo(0, document.body.scrollHeight);
 
     
     
