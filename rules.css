@@ -1,5 +1,5 @@
 @font-face{
-    src: url(Circular\ Font\ Family/);
+    src: url(Gotham-Bold.otf);
     font-family: Gotham;
 }
 
@@ -69,24 +69,6 @@ label {
     align-items: left;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    
-}
-.item {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    
-}
-.container img {
-    
-    max-width: 100%;
-    height: auto;
-}
 
 .button{
     margin: 5px;
@@ -140,4 +122,214 @@ img {
     text-align: center;
     margin: 10px auto;
     font-size: 20px;
+}
+.container header{
+    font-size: 30px;
+    text-decoration: underline;
+    margin: 15px 5px;
+    text-align: center;
+    padding: 10px;
+}
+#pieces{
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 20px;
+    margin-top: 40px auto;
+    text-align: center;
+    width:100%;
+}
+.prev, .next {
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    color: #1c1a16;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.2s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .next {
+    align-items: right;
+    border-radius: 3px 0 0 3px;
+    
+  }
+  .prev:hover, .next:hover {
+    background-color: #b18863;
+  }
+/* -Adding the optimization for mobile devices- */
+@media only screen and (max-width:858px){
+    @font-face{
+        src: url(Gotham-Bold.otf);
+        font-family: Gotham;
+    }
+    
+    body {
+        background-color: rgb(250, 240, 230);
+    }
+    * {
+        color: #1c1a16;
+        box-sizing: border-box;
+        font-family: Gotham, sans-serif;
+      }
+    
+     li {
+        float: left;
+        
+    }
+    li a {
+        display: block;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        transition: 0.5s background-color;
+    }
+    li a:hover{
+        background-color:#c1946c;
+        cursor: pointer;
+        transition-delay: 0.07s;
+    }
+    li a:active{
+        background-color:#d6ad89;
+        opacity: 70%;
+        transform:scale(0.9);
+        
+    }
+    ul {
+        background-color: #b18863;
+        list-style-type: none; 
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border-radius: 10px;
+        
+    }
+    
+    
+    
+    
+    form {
+        background-color:  #e4d1b0;
+        border-radius: 10px;
+        margin: 0 auto;
+        margin-top: 30px;
+        max-width: 40%;
+        padding: 20px;
+        justify-content: space;
+      }
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    
+        
+    #setup {
+        display: flex;
+        text-align: left;
+        align-items: left;
+    }
+    
+    
+    .item {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        
+    }
+    
+    
+    .button{
+        margin: 5px;
+        border:none;
+        text-decoration: none;
+        background-color:#b18863;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+    
+    
+    }
+    
+    .button:hover{
+        background-color:#bf9169;
+        cursor: pointer;
+    }
+    .button:active{
+        background-color:#d0a47d;
+        opacity: 70%;
+        transform:scale(0.9);
+        
+    }
+    img {
+        border-radius: 15px;
+        width: 100%;
+        
+    }
+    .banner{
+        margin: 5px;
+        width:80%;
+        border: none;
+        overflow: hidden;
+        margin-top: 0 auto;
+        margin-bottom: 2px;
+    }
+    .banner img{
+        max-width: 100%;
+        max-height: 100%;
+        object-fit:contain ;
+    }
+    
+    #buttons{
+        justify-content: center;
+        display: flex;
+        max-width: 100%;
+        text-align: above;
+        margin: 20 auto;
+    }
+    
+    #setup{
+        height: 100%;
+        width: 100%;
+    }
+    .container header{
+        font-size: 30px;
+        text-decoration: underline;
+        margin: 15px 5px;
+        text-align: center;
+        padding: 10px;
+    }
+    #pieces{
+        border-radius: 10px;
+        margin-top: 30px;
+        padding: 20px;
+        margin-top: 40px auto;
+        text-align: center;
+    }
+    .prev, .next {
+        text-align: center;
+        align-items: center;
+        cursor: pointer;
+        top: 50%;
+        width: auto;
+        padding: 10px;
+        color: #1c1a16;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.2s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      .next {
+        align-items: right;
+        border-radius: 3px 0 0 3px;
+        
+      }
+      .prev:hover, .next:hover {
+        background-color: #b18863;
+      }
 }

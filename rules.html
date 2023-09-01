@@ -28,50 +28,74 @@
         <button class="button" id="rBtn">Rules</button>
        </form>
 
-
-       <form id="rules" style="display:none">
-        <p>The rules of Chess.
+<div class="rulesContainer">
+        <form id="rules" style="display:none">
+            <p>The rules of Chess.
             <br> The player with “white” pieces makes the first move. After the first move the player with the “black” pieces makes the second move. Players then alternate moves until the game reaches one of four conclusions: Reaching the time limit, Checkmate, Draw or Resignation. 
             A game of chess usually has a time limit in which a player must make their moves to reach the goal - checkmate. If the time runs out, the game ends with a win for the player that still has time left.
             Checkmate is given when a player’s king is threatened with capture and there’s no way to evade the capture. Draw (neither of the player wins) can occur in various situations. A game of chess always has a limit to the moves players are allowed to make in repetition as well as the legal cap on moves in general (usually fifty moves). So the game can be drawn by repetition of moves, reaching the set move limit or when players reach a “dead position”. Dead position can be reached when there’s no possible way for players to checkmate one-another, for example when only kings remain in play. Players can also opt to resign the game if they choose to, which leads to the other player winning the game. Stalemate is a situation in which the opposing player has no legal moves left - leads to a draw. Players are also able to agree to a draw if one offers so.
             </p>
-       </form>
-
-       <form id="setup" style="display:none">
-        <head>
+        </form>
+        <form id="setup" style="display:none">
             <p>Setup and starting position: </p>
             <img src="setup1.PNG" alt="">
-        </head>
-    </form>
-    
+        </form>
     <form id="pieces" style="display:none">
         <div class="container">
+            <header>
+                How each piece moves:
+            </header>
+            <div class="controlBtns">
+                <a class="prev" onclick="changeSlide1(-1)"title="Show the previous move">&#10094;Previous</a>
+                <a class="next" onclick="changeSlide1(1)" title="Show the next move">Next&#10095;</a>
+            </div>
             <div class="item">
-            <img class="img" src="rules1.PNG" alt="">
-            <p>King moves 1 square in any direction.</p>
-        </div>
+                <p>King moves 1 square in any direction.</p>
+                <img class="img" src="Rules - Pieces/king.png" alt="">
+            </div>
             <div class="item">
-            <img class="img" src="rules2.PNG" alt="">
-            <p>Rook moves in only horizontal/vertical squares.</p>
-        </div>
+                <p>Rook moves in only horizontal/vertical squares.</p>
+                <img class="img" src="Rules - Pieces/rook.png" alt="">
+            </div>
             <div class="item">
-            <img class="img" src="rules3.PNG" alt="">
-            <p>Bishop moves diagonally.</p>
+                <p>Bishop moves diagonally.</p>
+                <img class="img" src="Rules - Pieces/bishop.png" alt="">
+            </div>
+            <div class="item">
+                <p>The Queen moves in any direction.</p>
+                <img class="img" src="Rules - Pieces/queen.png" alt="">
+            </div>
+            <div class="item">
+                <p>The Knight moves in an "L" shape. For example, 2 squares left and 1 square up. </p>
+                <img class="img" src="Rules - Pieces/knight.png" alt="">
+            </div>
+            <div class="item">
+                <p>The Pawn's moves are a bit more complex.
+                   From the starting square, a pawn can move one or two squares forwards.
+                </p>
+                <img class="img" src="Rules - Pieces/pawn1.png" alt="">
+            </div>
+            <div class="item">
+                <p>But from any other square, a pawn can only move one square forwards.</p>
+                <img class="img" src="Rules - Pieces/pawn2.png" alt="">
+            </div>
+            <div class="item">
+                <p>Pawns can normally only take as shown, to it's next diagonal square.</p>
+                <img class="img" src="Rules - Pieces/pawn5.png" alt="">
+            </div>
+            <div class="item">
+                <p>Here we see white moving a pawn two squares forward from it's starting square.
+                   If black has a pawn that would threaten the white's pawn if it only moved one square ahead,
+                   then and only then black has a move called...
+                </p>
+                <img class="img" src="Rules - Pieces/pawn3.png" alt="">
+            </div>
+            <div class="item">
+                <p>EN PASSANT!</p>
+                <img class="img" src="Rules - Pieces/pawn 4.png" alt="">
+            </div>
+            
         </div>
-        <div class="item">
-            <img class="img" src="rules4.PNG" alt="">
-            <p>The Queen moves in any direction.</p>
-        </div>
-        <div class="item">
-            <img class="img" src="rules5.PNG" alt="">
-            <p>The Knight moves in an "L" shape. For example, 2 squares left and 3 squares up. </p></div>
-        <div class="item">
-            <img class="img" src="rules6.PNG" alt="">
-            <p>The Pawns moves are a bit more complex.</p>
-        </div>
-        
-    </div>
-
     </form>
     <script src="rules.js"></script>
 </body>

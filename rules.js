@@ -27,3 +27,24 @@ rBtn.addEventListener("click", function(e){
     formS.style.display = "none";
     formP.style.display = "none";
 });
+
+let slideIndex1 = 0;
+showSlide1(slideIndex1);
+
+function changeSlide1(a) {
+    showSlide1(slideIndex1 += a);
+}
+
+function showSlide1(a) {
+    let slides1 = document.getElementsByClassName("item");
+    if (a >= slides1.length) {
+        slideIndex1 = 0;
+    } else if (a < 0) {
+        slideIndex1 = slides1.length - 1;
+    }
+    for (let j = 0; j < slides1.length; j++) {
+        slides1[j].style.display = "none";
+    }
+    slides1[slideIndex1].style.display = "block";
+    window.scrollTo(0, document.body.scrollHeight);
+}

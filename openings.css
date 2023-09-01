@@ -1,8 +1,12 @@
+
 @font-face{
     src: url(Gotham-Bold.otf);
     font-family: Gotham;
 }
 
+/* -For desktop use- */
+
+@media only screen and (min-width: 960px){
 body {
     background-color: rgb(250, 240, 230);
 }
@@ -13,8 +17,10 @@ body {
   }
   li {
     float: left;
+  }
+ 
     
-}
+
 li a {
     display: block;
     padding: 14px 16px;
@@ -46,9 +52,9 @@ ul {
 form {
     background-color: #e4d1b0;
     border-radius: 10px;
-    margin-left: 200px;
     margin-top: 30px;
     max-width: 40%;
+    margin-left: 30%;
     padding: 20px;
     justify-content: space;
     
@@ -91,8 +97,7 @@ img {
 }
 .banner{
     margin: 5px;
-    width: 27%;
-
+    max-width: 20%;
     border: none;
     overflow: hidden;
     margin-top: 0 auto;
@@ -118,6 +123,7 @@ img {
     height: auto;
     border-radius: 5px;
 }
+
 #openings header{
     font-size: 18px;
     display: flex;
@@ -141,18 +147,14 @@ img {
 }
 #formQ{
     border-radius: 10px;
-    margin-left: 200px;
     margin-top: 30px;
-    max-width: 40%;
     padding: 20px;
     margin-top: 40px auto;
     text-align: center;
 }
 #formR{
     border-radius: 10px;
-    margin-left: 200px;
     margin-top: 30px;
-    max-width: 40%;
     padding: 20px;
     margin-top: 40px auto;
     text-align: center;
@@ -195,4 +197,211 @@ img {
   }
 .slideQ p{
     max-height: 300px;
+}
+
+
+}
+/* -Adding the optimization for mobile devices- */
+@media only screen and (max-width:858px){
+
+
+    #openings{
+        width: 100%;
+        height: 100%;
+
+    }
+    body {
+        background-color: rgb(250, 240, 230);
+    }
+    * {
+        color: #1c1a16;
+        box-sizing: border-box;
+        font-family: Gotham, sans-serif;
+      }
+      li {
+        float: left;
+      }
+    
+    
+    li a {
+        display: block;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        transition: 0.5s background-color;
+    }
+    li a:hover{
+        background-color: #c1946c;
+        cursor: pointer;
+        transition-delay: 0.07s;
+    }
+    li a:active{
+        background-color:  #d6ad89;
+        opacity: 70%;
+        transform:scale(0.9);
+        
+    }
+    ul {
+        width:100%;
+        top:80px;
+        text-align: center;
+        background-color:#b18863;
+        list-style-type: none; 
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+  
+    form {
+        background-color: #e4d1b0;
+        border-radius: 10px;
+        margin-top: 30px;
+        width: 100%;
+        padding: 20px;
+        justify-content: space;
+        
+        
+      }
+    
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    .button{
+        margin: 5px;
+        border:none;
+        text-decoration: none;
+        background-color:#b18863;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .button:hover{
+        background-color:#b18863;
+        cursor: pointer;
+        opacity: 90%;
+    }
+    .button:active{
+        background-color:#d0a47d;
+        opacity: 85%;
+        transform:scale(0.95);
+        transition-delay: 0.08s;
+        
+    }
+     
+    img {
+        border-radius: 15px;
+        width: 85%;
+        width: 85%;
+    }
+    .banner{
+        margin: 5px;
+        width: 80%;
+        border: none;
+        overflow: hidden;
+        margin-top: 0 auto;
+        margin-bottom: 2px;
+    }
+    .banner img{
+        max-width: 100%;
+        max-height: 100%;
+        
+    }
+    
+    .item {
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: center;
+        border-radius: 5px;
+        
+    }
+    .imgq{
+        max-width: 150%;
+        height: auto;
+        border-radius: 5px;
+    }
+    #openings, #formQ, #formR, #formL, #whiteOp, #blackOp{
+        width:100%;
+       
+    }
+    #openings header{
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: center;
+        text-decoration: underline;
+    }
+    .london{
+        max-width: 150%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        
+    }
+    #formL header{
+        font-size: 24px;
+        text-decoration: underline;
+        margin: 15px 5px;
+        text-align: center;
+    }
+    #formQ{
+        border-radius: 10px;
+        margin-top: 30px;
+        padding: 20px;
+        margin-top: 40px auto;
+        text-align: center;
+    }
+    #formR{
+        border-radius: 10px;
+        margin-top: 30px;
+        padding: 20px;
+        margin-top: 40px auto;
+        text-align: center;
+    }
+    .queens header{
+        font-size: 30px;
+        text-decoration: underline;
+        margin: 15px 5px;
+        text-align: center;
+        padding: 10px;
+    }
+    .lopez header{
+        font-size: 30px;
+        text-decoration: underline;
+        margin: 15px 5px;
+        text-align: center;
+        padding: 10px;
+    }
+    .prev, .next {
+        text-align: center;
+        align-items: center;
+        cursor: pointer;
+        top: 50%;
+        width: auto;
+        padding: 10px;
+        color: #1c1a16;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.2s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      .next {
+        align-items: right;
+        border-radius: 3px 0 0 3px;
+        
+      }
+      .prev:hover, .next:hover {
+        background-color: #b18863;
+      }
+    .slideQ p{
+        max-height: 300px;
+    }
+    
 }
