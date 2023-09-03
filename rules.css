@@ -17,7 +17,7 @@ form {
     border-radius: 10px;
     margin: 0 auto;
     margin-top: 30px;
-    max-width: 40%;
+    max-width: 100%;
     padding: 20px;
     justify-content: space;
   }
@@ -25,13 +25,17 @@ label {
     display: block;
     margin-bottom: 10px;
 }
-
-
-    
 #setup {
     display: flex;
-    text-align: left;
-    align-items: left;
+    text-align: center;
+    align-items: center;
+    width: 60%;
+    padding: 2rem;
+}
+#setup p {
+    text-align: center;
+    margin: 2rem 2rem;
+    font-size: 20px;
 }
 
 img {
@@ -56,29 +60,28 @@ img {
 #buttons{
     justify-content: center;
     display: flex;
-    max-width: 50%;
+    max-width: 60%;
     text-align: above;
     margin: 20 auto;
 }
-#setup p {
-    text-align: center;
-    margin: 10px auto;
-    font-size: 20px;
-}
+
 .container header{
-    font-size: 30px;
-    text-decoration: underline;
-    margin: 15px 5px;
+    font-size: 20px;
+    margin: 1rem;
+    margin-top: 1rem;
     text-align: center;
-    padding: 10px;
 }
 #pieces{
-    border-radius: 10px;
-    margin-top: 30px;
-    padding: 20px;
-    margin-top: 40px auto;
     text-align: center;
-    width:100%;
+    align-items: center;
+    width: 60%;
+
+}
+.item p {
+    padding: 1rem;
+    margin: 2rem auto;
+    margin-left: 2rem;
+    text-align:center;
 }
 
 /* -Adding the optimization for mobile devices- */
