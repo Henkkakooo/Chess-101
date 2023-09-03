@@ -1,0 +1,99 @@
+.button{
+    margin: 5px;
+    background-color:#e4d1b0;
+    padding: 5px;
+    cursor: pointer;
+    border: 3px solid;
+    border-radius: 5px;
+    border-color: #b18863;
+    transition: 0.2s;
+}
+.button:hover{
+    background-color:#b18863;
+    cursor: pointer;
+    color: aliceblue;
+    transform: translateY(-3px);
+}
+.button:active{
+    background-color: #99624c;
+    border-color: #99624c;
+    transform: scale(105%);
+    transition: 0.1s;
+    
+}
+.prev, .next {
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    color: #1c1a16;
+    font-weight: bold;
+    font-size: 18px;
+    user-select: none;
+    border:3px solid #b18863;
+    transition: 0.2s;
+    border-radius: 5px;
+  }
+  .next {
+    align-items: right;
+    border-radius: 5px;
+    
+  }
+  .prev:hover, .next:hover {
+    background-color: #b18863;
+    color: aliceblue;
+  }
+
+@media only screen and (max-width: 858px){
+    .button{
+        margin: 5px;
+        background-color:#e4d1b0;
+        padding: 5px;
+        cursor: pointer;
+        border: 3px solid;
+        border-radius: 5px;
+        border-color: #b18863;
+        transition: 0.2s;
+    }
+    .button:hover{
+        background-color:#b18863;
+        cursor: pointer;
+        color: aliceblue;
+        transform: translateY(-3px);
+    }
+    .button:active{
+        background-color: #99624c;
+        border-color: #99624c;
+        transform: scale(105%);
+        transition: 0.1s;
+        
+    }
+    .prev, .next {
+        text-align: center;
+        align-items: center;
+        cursor: pointer;
+        top: 50%;
+        width: auto;
+        padding: 10px;
+        color: #1c1a16;
+        font-weight: bold;
+        font-size: 18px;
+        user-select: none;
+        border:3px solid #b18863;
+        transition: 0.2s;
+        border-radius: 5px;
+      }
+      .next {
+        align-items: right;
+        border-radius: 5px;
+        
+      }
+      .prev:hover, .next:hover {
+        background-color: #b18863;
+        color: aliceblue;
+      }
+
+}
+
