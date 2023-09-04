@@ -21,6 +21,7 @@ li a:hover{
 }
 li a:active{
     background-color:  #e4d1b0;
+    color: #1c1a16;
   
 }
 ul {
@@ -38,7 +39,7 @@ ul {
     justify-content: center;
 }
     ul {
-        max-width: 60%;
+        max-width: 100%;
     }
 
 }

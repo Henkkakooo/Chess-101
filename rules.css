@@ -17,7 +17,7 @@ form {
     border-radius: 10px;
     margin: 0 auto;
     margin-top: 30px;
-    max-width: 100%;
+    max-width: 40%;
     padding: 20px;
     justify-content: space;
   }
@@ -60,7 +60,7 @@ img {
 #buttons{
     justify-content: center;
     display: flex;
-    max-width: 60%;
+    max-width: 40%;
     text-align: above;
     margin: 20 auto;
 }
@@ -74,7 +74,7 @@ img {
 #pieces{
     text-align: center;
     align-items: center;
-    width: 60%;
+    width: 40%;
 
 }
 .item p {

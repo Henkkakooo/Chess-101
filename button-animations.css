@@ -16,7 +16,6 @@
     border: 3px solid;
     border-radius: 5px;
     border-color: #b18863;
-    transition: 0.3s;
     animation-name: button;
     animation-duration: 0.2s ;
     animation-timing-function:  cubic-bezier(.26, .53, .74, 1.48);
@@ -27,12 +26,13 @@
     cursor: pointer;
     color: aliceblue;
     transform: translateY(-3px);
+    transition: 0.3s;
 }
-.button:active{
+.button:focus{
     background-color: #99624c;
     border-color: #99624c;
-    transform: scale(105%);
-    transition: 0.1s;
+    color: aliceblue;
+    
     
 }
 .prev, .next {
@@ -77,13 +77,13 @@
         color: aliceblue;
         transform: translateY(-3px);
     }
-    .button:active{
-        background-color: #99624c;
-        border-color: #99624c;
-        transform: scale(105%);
-        transition: 0.1s;
-        
-    }
+    .button:focus{
+      background-color: #99624c;
+      border-color: #99624c;
+      color: aliceblue;
+      
+      
+  }
     .prev, .next {
         text-align: center;
         align-items: center;
