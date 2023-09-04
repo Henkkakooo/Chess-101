@@ -15,9 +15,9 @@ body {
 form {
     background-color:  #e4d1b0;
     border-radius: 10px;
-    margin: 0 auto;
     margin-top: 30px;
     max-width: 40%;
+    margin-left: 20%;
     padding: 20px;
     justify-content: space;
   }
@@ -71,18 +71,66 @@ img {
     margin-top: 1rem;
     text-align: center;
 }
-#pieces{
-    text-align: center;
-    align-items: center;
-    width: 40%;
-
-}
 .item p {
     padding: 1rem;
     margin: 2rem auto;
     margin-left: 2rem;
     text-align:center;
 }
+/* Collapsible Pieces menu*/
+.piecesContainer{
+    display: block;
+    align-items: left;
+    justify-content: left;
+    
+    
+
+
+}
+.piecesContent{
+    display:none;
+    overflow: hidden;
+    background-color:#b18863 ;
+    border-radius: 1rem;
+    border: none;
+    margin: 1rem;
+    padding: 4rem;
+    text-align: center;
+    outline: none;
+    width: 100%;
+
+}
+.piecesBtn{
+    background-color:#e4d1b0;
+    cursor: pointer;
+    border: 3px solid;
+    border-radius: 5px;
+    border-color: #b18863;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    justify-content: center;
+    text-align: center;
+    animation-name: button;
+    animation-duration: 0.2s ;
+    animation-timing-function:  cubic-bezier(.26, .53, .74, 1.48);
+}
+
+
+.piecesBtn:hover{
+    background-color:#b18863;
+    cursor: pointer;
+    color: aliceblue;
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
+.piecesBtn:focus{
+    background-color: #99624c;
+    border-color: #99624c;
+    color: aliceblue;
+}
+
 
 /* -Adding the optimization for mobile devices- */
 @media only screen and (max-width:858px){

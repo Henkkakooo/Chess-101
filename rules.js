@@ -28,23 +28,24 @@ rBtn.addEventListener("click", function(e){
     formP.style.display = "none";
 });
 
-let slideIndex1 = 0;
-showSlide1(slideIndex1);
+var piecesBtn = document.getElementsByClassName("piecesBtn");
+var piecesContent = document.getElementsByClassName("piecesContent");
+var i;
 
-function changeSlide1(a) {
-    showSlide1(slideIndex1 += a);
-}
+for (var i = 0; i < piecesBtn.length; i++) {
+  piecesBtn[i].addEventListener("click", function () {
+    var content = this.nextElementSibling;
 
-function showSlide1(a) {
-    let slides1 = document.getElementsByClassName("item");
-    if (a >= slides1.length) {
-        slideIndex1 = 0;
-    } else if (a < 0) {
-        slideIndex1 = slides1.length - 1;
+    for (var j = 0; j < piecesContent.length; j++) {
+      if (piecesContent[j] !== content) {
+        piecesContent[j].style.display = "none";
+      }
     }
-    for (let j = 0; j < slides1.length; j++) {
-        slides1[j].style.display = "none";
+
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
     }
-    slides1[slideIndex1].style.display = "block";
-    window.scrollTo(0, document.body.scrollHeight);
+  });
 }
