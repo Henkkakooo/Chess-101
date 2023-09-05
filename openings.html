@@ -50,38 +50,81 @@
         <button class="button" id="indianBtn">King's indian Defence</button>
     </form>
 
-    <form id="formL" style="display: none;">
-       <header>
-            London system
-       </header>
-   
-            <div class="london">
-                <div class="item">
-                    <img class="imgq" src="Opening images London/london1.PNG">
-                    <p>
-                        White starts with e4, black responds with e5.
-                    </p>
-                </div>
-                <div class="item">
-                    <img class="imgq" src="Opening images London/london3.PNG" >
-                    <p>
-                        Both white and black bring out their king-sided knigths.
-                    </p>
-                </div>
-                <div class="item">
-                    <img class="imgq" src="Opening images London/london4.PNG" >
-                    <p>
-                        White brings out their dark-squared bishop to f4.
-                    </p>
-                </div>
-                <div class="item">
-                    <img class="imgq" src="Opening images London/london5.PNG" >
-                    <p>
-                        Here you can see the London System's developmental goal
-                        with the pawns creating an arrow-like configuration.
-                    </p>
-                </div>
+    <form id="formL" style="display: none;" class="openingContainer">
+        <div class="london">
+            <div class="controlBtns">
+                <a class="prev" onclick="changeSlide3(-1)"title="Show the previous move">&#10094;Previous</a>
+                <a class="next" onclick="changeSlide3(1)" title="Show the next move">Next&#10095;</a>
             </div>
+            <header>
+                London system
+            </header>
+            <div class="slideL">
+                <p>
+                    1. White starts with d4.
+                </p>
+                <img src="Opening images London/london1.PNG">
+            </div>
+            <div class="slideL">
+                <p>
+                    2. Black responds with d5.
+                </p>
+                <img src="Opening images London/london2.PNG" >
+            </div>
+            <div class="slideL">
+                <p>
+                    3. White can here move their bishop to f4 or a knight to f3 like shown.
+                </p>
+                <img src="Opening images London/london3.PNG" >
+            </div>
+            <div class="slideL">
+                <p>
+                    4. Black moves their knight to f6.
+                </p>
+                <img src="Opening images London/london4.PNG" >
+            </div>
+            <div class="slideL">
+                <p>
+                    5. White moves the bishop to f4.
+                </p>
+                <img src="Opening images London/london5.PNG" >
+            </div>
+            <div class="slideL">
+                <p>
+                    6. Black again makes a developing move with knight to c6.
+                </p>
+                <img src="Opening images London/london6.PNG" >
+            </div>
+            <div class="slideL">
+                <p>
+                    7. White continues with e3.
+                </p>
+                <img src="Opening images London/london7.PNG" >
+            </div>
+            <div class="slideL">
+                <p>
+                    8. Black copies white's move with e6.
+                </p>
+                <img src="Opening images London/london8.PNG" >
+            </div>
+            <div class="slideL">
+                <p>
+                    9. Here if white takes, black can take back with the queen and move it to a more
+                    active square.
+                </p>
+                <img src="Opening images London/london9.PNG" >
+            </div>
+            <div class="slideL">
+                <p>
+                    10. White retreats their bishop back to g3. 
+                    This position arises often in London system with white having a slight advantage
+                    in position. From this point forwards there are many strategies for both sides
+                    - for more information about strategies check "Strategies".
+                    
+                </p>
+                <img src="Opening images London/london10.PNG" >
+            </div>
+        </div>
     </form>
     <form id="formQ" style="display: none;" class="openingContainer">
             <div class="queens">
@@ -89,51 +132,50 @@
                     <a class="prev" onclick="changeSlide2(-1)"title="Show the previous move">&#10094;Previous</a>
                     <a class="next" onclick="changeSlide2(1)" title="Show the next move">Next&#10095;</a>
                 </div>
-                
-                <div class="slideQ">
-                    <header>
+                <header>
                     Queen's Gambit
                 </header>
+                <div class="slideQ">
                     <p>
                         1. Queen's Gambit start with pawn to d4.
                     </p>
-                    <img class="imgq" src="Opening images Queens/queens1.PNG" alt="">
+                    <img src="Opening images Queens/queens1.PNG" alt="">
                 </div>
                 <div class="slideQ">
                     <p>
                         2. Black responds with d5.
                     </p>
-                    <img class="imgq" src="Opening images Queens/queens2.PNG" alt="">
+                    <img src="Opening images Queens/queens2.PNG" alt="">
                 </div>
                 <div class="slideQ">
                     <p>
                         3. White continues with c4, gambiting a pawn.
                     </p>
-                    <img class="imgq" src="Opening images Queens/queens3.PNG" alt="">
+                    <img src="Opening images Queens/queens3.PNG" alt="">
                 </div>
                 <div class="slideQ">
                     <p>
                         4. Black can now accept the gambit and take the pawn. Let's see what happens
                     </p>
-                    <img class="imgq" src="Opening images Queens/queens4.PNG" alt="">
+                    <img src="Opening images Queens/queens4.PNG" alt="">
                 </div>
                 <div class="slideQ">
                     <p>
                         5. White opens up the diagonal for their light-squared bishop with e3 creating a threat to black.
                     </p>
-                    <img class="imgq" src="Opening images Queens/queens5.PNG" alt="">
+                    <img src="Opening images Queens/queens5.PNG" alt="">
                 </div>
                 <div class="slideQ">
                     <p>
                         6. If black doesn't defend the pawn, white can simply take and continue development.
                     </p>
-                    <img class="imgq" src="Opening images Queens/queens6.PNG" alt="">
+                    <img src="Opening images Queens/queens6.PNG" alt="">
                 </div>
                 <div class="slideQ">
                     <p>
                         7. White takes the c4 pawn. Now both players can continue their development.
                     </p>
-                    <img class="imgq" src="Opening images Queens/queens7.PNG" alt="">
+                    <img src="Opening images Queens/queens7.PNG" alt="">
                 </div>
                 <div class="slideQ">
                     <p>
@@ -153,31 +195,31 @@
                 <header>
                     Ruy Lopéz
                 </header>
-            <div class="slideL">
+            <div class="slideR">
                 <p>
                     1. The White opens with e4 and black responds with e5.
                 </p>
                 <img src="Opening images Ruy/lopez1.PNG" >  
             </div>
-            <div class="slideL">
+            <div class="slideR">
                 <p>
                     2. White threatens the e5 pawn.
                 </p>
                 <img src="Opening images Ruy/lopez2.PNG" >
             </div>
-            <div class="slideL">
+            <div class="slideR">
                 <p>
                     3. Black defends the e5 pawn.
                 </p>
                 <img src="Opening images Ruy/lopez3.PNG" >
             </div>
-            <div class="slideL">
+            <div class="slideR">
                 <p>
                     4. White pins the knight on c6. The Ruy Lopéz- opening is complete.
                 </p>
                 <img src="Opening images Ruy/lopez4.PNG">
             </div>
-            <div class="slideL">
+            <div class="slideR">
                 <p>
                     5. Black's usual response is to kick the bishop out. White
                     can simply retreat to a4 etc. Otherwise White will keep pinning the knight

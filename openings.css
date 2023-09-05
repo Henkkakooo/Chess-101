@@ -61,21 +61,6 @@ img {
     
 }
 
-.item {
-    font-size: 18px;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    align-items: center;
-    border-radius: 5px;
-    
-}
-.imgq{
-    max-width: 150%;
-    height: auto;
-    border-radius: 5px;
-}
-
 #openings header{
     font-size: 18pt;
     display: flex;
@@ -84,18 +69,20 @@ img {
     align-items: center;
     text-decoration: underline;
 }
-.london{
-    max-width: 150%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    
+#formL{
+border-radius: 10px;
+    margin-top: 30px;
+    padding: 20px;
+    margin-top: 40px auto;
+    text-align: center;
+    scroll-snap-type: mandatory;
 }
-#formL header{
-    font-size: 24px;
+.london header{
+    font-size: 30px;
     text-decoration: underline;
     margin: 15px 5px;
     text-align: center;
+    padding: 10px;
 }
 #formQ{
     border-radius: 10px;
@@ -110,6 +97,7 @@ img {
     padding: 20px;
     margin-top: 40px auto;
     text-align: center;
+    scroll-snap-type: mandatory;
 }
 .queens header{
     font-size: 30px;

@@ -108,12 +108,13 @@ BtnB.addEventListener("click", function(e){
 let slideIndex1 = 0;
 showSlide(slideIndex1);
 
+
 function changeSlide(n) {
     showSlide(slideIndex1 += n);
 }
 
 function showSlide(n) {
-    let slides = document.getElementsByClassName("slideL");
+    let slides = document.getElementsByClassName("slideR");
     if (n >= slides.length) {
         slideIndex1 = 0;
     } else if (n < 0) {
@@ -123,11 +124,12 @@ function showSlide(n) {
         slides[i].style.display = "none";
     }
     slides[slideIndex1].style.display = "block";
-    window.scrollTo(0, document.body.scrollHeight);
+    
 }
 
 let slideIndex2 = 0;
 showSlide2(slideIndex2);
+
 
 function changeSlide2(a) {
     showSlide2(slideIndex2 += a);
@@ -144,7 +146,28 @@ function showSlide2(a) {
         slides2[j].style.display = "none";
     }
     slides2[slideIndex2].style.display = "block";
-    window.scrollTo(0, document.body.scrollHeight);
+    
+}
+
+let slideIndex3 = 0;
+showSlide3(slideIndex3);
+
+function changeSlide3(b) {
+    showSlide3(slideIndex3 += b);
+}
+
+function showSlide3(b) {
+    let slides3 = document.getElementsByClassName("slideL");
+    if (b >= slides3.length) {
+        slideIndex3 = 0;
+    } else if (b < 0) {
+        slideIndex3 = slides3.length - 1;
+    }
+    for (let k = 0; k < slides3.length; k++) {
+        slides3[k].style.display = "none";
+    }
+    slides3[slideIndex3].style.display = "block";
+    
 }
 
     

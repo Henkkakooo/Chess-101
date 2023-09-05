@@ -28,24 +28,25 @@ rBtn.addEventListener("click", function(e){
     formP.style.display = "none";
 });
 
+
 var piecesBtn = document.getElementsByClassName("piecesBtn");
 var piecesContent = document.getElementsByClassName("piecesContent");
 var i;
 
 for (var i = 0; i < piecesBtn.length; i++) {
   piecesBtn[i].addEventListener("click", function () {
+    this.classList.toggle("active");
     var content = this.nextElementSibling;
-
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
     for (var j = 0; j < piecesContent.length; j++) {
       if (piecesContent[j] !== content) {
-        piecesContent[j].style.display = "none";
+        piecesContent[j].style.maxHeight = null; // Close other sections
       }
     }
-
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
+    content.scrollIntoView({behaviour: "smooth", block: "start"})
   });
 }

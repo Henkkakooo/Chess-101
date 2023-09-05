@@ -3,6 +3,9 @@
     font-family: Gotham;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: rgb(250, 240, 230);
 }
@@ -77,28 +80,20 @@ img {
     margin-left: 2rem;
     text-align:center;
 }
-/* Collapsible Pieces menu*/
-.piecesContainer{
-    display: block;
-    align-items: left;
-    justify-content: left;
-    
-    
 
+/* Collapsible "Pieces" menu*/
 
-}
-.piecesContent{
-    display:none;
+.piecesContent {
+    max-height: 0;
     overflow: hidden;
-    background-color:#b18863 ;
-    border-radius: 1rem;
     border: none;
-    margin: 1rem;
-    padding: 4rem;
     text-align: center;
-    outline: none;
-    width: 100%;
-
+    padding: 0;
+    transition: max-height 0.3s ;
+}
+.piecesContent img{
+    width:60%;
+    
 }
 .piecesBtn{
     background-color:#e4d1b0;
@@ -107,16 +102,12 @@ img {
     border-radius: 5px;
     border-color: #b18863;
     display: flex;
-    align-items: center;
-    padding: 1rem;
-    margin: 1rem;
-    justify-content: center;
-    text-align: center;
+    padding: 12px;
+    margin: 10px 0;
     animation-name: button;
     animation-duration: 0.2s ;
-    animation-timing-function:  cubic-bezier(.26, .53, .74, 1.48);
+    animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
 }
-
 
 .piecesBtn:hover{
     background-color:#b18863;
@@ -130,7 +121,7 @@ img {
     border-color: #99624c;
     color: aliceblue;
 }
-
+/* ---- */
 
 /* -Adding the optimization for mobile devices- */
 @media only screen and (max-width:858px){
