@@ -47,6 +47,6 @@ for (var i = 0; i < piecesBtn.length; i++) {
         piecesContent[j].style.maxHeight = null; // Close other sections
       }
     }
-    content.scrollIntoView({behaviour: "smooth", block: "start"})
+    content.scrollIntoView({behaviour: "smooth", block: "start"});
   });
 }

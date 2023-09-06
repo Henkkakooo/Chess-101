@@ -10,72 +10,53 @@ html {
 
 /* -For desktop use- */
 
-@media only screen and (min-width: 858px){
 body {
-    background-color: rgb(250, 240, 230);
-    justify-content: center;
+    background-color: #d2cae5;
 }
 * {
-    color: #1c1a16;
+    color: #fff4ec;
     box-sizing: border-box;
     font-family: Gotham, sans-serif;
     font-size: 12pt;
   }
-
-
+h1 {
+    font-size: 18pt;
+}
+h3{
+    font-size: 10pt;
+}
 form {
-    background-color: #e4d1b0;
-    border-radius: 10px;
+    background-color: #464359;
+    border-radius: 1rem;
     margin-top: 30px;
     max-width: 40%;
     margin-left: 20%;
-    padding: 20px;
-    justify-content: space;
-    
-    
+    padding: 1rem;
+    justify-content: center;
+    text-align: center;
   }
 
-label {
-    display: block;
-    margin-bottom: 10px;
-}
 
-
-
-img {
-    border-radius: 15px;
-    width: 85%;
-    width: 85%;
+.difficultyContainer{
+    display: flex;
+    margin: 0;
 }
-.banner{
-    margin: 5px;
-    max-width: 20rem;
-    border: none;
-    overflow: hidden;
-    margin-top: 0 auto;
-    margin-bottom: 2px;
-}
-.banner img{
-    max-width: 100%;
-    max-height: 100%;
+.difficultyContainer img{
+    width: 20%;
     
 }
 
-#openings header{
-    font-size: 18pt;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    align-items: center;
-    text-decoration: underline;
+.openingsContainer form{
+    background-color: #605c78;
+}
+
+#openings p {
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 2rem;
 }
 #formL{
-border-radius: 10px;
-    margin-top: 30px;
-    padding: 20px;
-    margin-top: 40px auto;
-    text-align: center;
-    scroll-snap-type: mandatory;
+    background-color:#b18863 ;
 }
 .london header{
     font-size: 30px;
@@ -85,19 +66,7 @@ border-radius: 10px;
     padding: 10px;
 }
 #formQ{
-    border-radius: 10px;
-    margin-top: 30px;
-    padding: 20px;
-    margin-top: 40px auto;
-    text-align: center;
-}
-#formR{
-    border-radius: 10px;
-    margin-top: 30px;
-    padding: 20px;
-    margin-top: 40px auto;
-    text-align: center;
-    scroll-snap-type: mandatory;
+    background-color:#b18863 ;
 }
 .queens header{
     font-size: 30px;
@@ -106,6 +75,10 @@ border-radius: 10px;
     text-align: center;
     padding: 10px;
 }
+#formR{
+    background-color:#b18863 ;
+}
+
 .lopez header{
     font-size: 30px;
     text-decoration: underline;
@@ -118,124 +91,15 @@ border-radius: 10px;
 }
 
 
-}
+
 /* -Adding the optimization for mobile devices- */
 @media only screen and (max-width:858px){
-
-
-    body {
-        background-color: rgb(250, 240, 230);
-    }
-    * {
-        color: #1c1a16;
-        box-sizing: border-box;
-        font-family: Gotham, sans-serif;
-    }
-    form {
-        background-color: #e4d1b0;
-        border-radius: 10px;
-        margin-top: 30px;
-        width: 100%;
-        padding: 20px;
-        justify-content: space;
+    form{
         
-        
-      }
-    
-    label {
-        display: block;
-        margin-bottom: 10px;
-    }
-    
-     
-    img {
-        border-radius: 15px;
-        width: 85%;
-        width: 85%;
-    }
-    .banner{
-        margin: 5px;
-        width: 40%;
-        border: none;
-        overflow: hidden;
-        margin-top: 0 auto;
-        margin-bottom: 2px;
-    }
-    .banner img{
         max-width: 100%;
-        max-height: 100%;
-        
+        margin: 1rem 0;
+        padding: 1rem;
+        border: 0;
     }
-    
-    .item {
-        font-size: 18px;
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        align-items: center;
-        border-radius: 5px;
-        
-    }
-    .imgq{
-        max-width: 150%;
-        height: auto;
-        border-radius: 5px;
-    }
- 
-       
-    
-    #openings header{
-        font-size: 18px;
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        align-items: center;
-        text-decoration: underline;
-    }
-    .london{
-        max-width: 150%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-        
-    }
-    #formL header{
-        font-size: 24px;
-        text-decoration: underline;
-        margin: 15px 5px;
-        text-align: center;
-    }
-    #formQ{
-        border-radius: 10px;
-        margin-top: 30px;
-        padding: 20px;
-        margin-top: 40px auto;
-        text-align: center;
-    }
-    #formR{
-        border-radius: 10px;
-        margin-top: 30px;
-        padding: 20px;
-        margin-top: 40px auto;
-        text-align: center;
-    }
-    .queens header{
-        font-size: 30px;
-        text-decoration: underline;
-        margin: 15px 5px;
-        text-align: center;
-        padding: 10px;
-    }
-    .lopez header{
-        font-size: 30px;
-        text-decoration: underline;
-        margin: 15px 5px;
-        text-align: center;
-        padding: 10px;
-    }
-    
-    .slideQ p{
-        max-height: 300px;
-    }
-    
+
 }

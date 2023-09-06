@@ -7,23 +7,25 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background-color: rgb(250, 240, 230);
+    background-color: #d2cae5;
 }
 * {
-    color: #1c1a16;
+    color: #fff4ec;
     box-sizing: border-box;
     font-family: Gotham, sans-serif;
   }
 
-form {
-    background-color:  #e4d1b0;
-    border-radius: 10px;
+  form {
+    background-color: #464359;
+    border-radius: 1rem;
     margin-top: 30px;
     max-width: 40%;
     margin-left: 20%;
-    padding: 20px;
-    justify-content: space;
+    padding: 1rem;
+    justify-content: center;
+    text-align: center;
   }
+
 label {
     display: block;
     margin-bottom: 10px;
@@ -41,33 +43,6 @@ label {
     font-size: 20px;
 }
 
-img {
-    border-radius: 15px;
-    width: 85%;
-    width: 85%;
-}
-.banner{
-    margin: 5px;
-    max-width: 20rem;
-    border: none;
-    overflow: hidden;
-    margin-top: 0 auto;
-    margin-bottom: 2px;
-}
-.banner img{
-    max-width: 100%;
-    max-height: 100%;
-    
-}
-
-#buttons{
-    justify-content: center;
-    display: flex;
-    max-width: 40%;
-    text-align: above;
-    margin: 20 auto;
-}
-
 .container header{
     font-size: 20px;
     margin: 1rem;
@@ -83,26 +58,36 @@ img {
 
 /* Collapsible "Pieces" menu*/
 
+#rules, #pieces{
+    background-color: #605c78;
+}
 .piecesContent {
     max-height: 0;
     overflow: hidden;
-    border: none;
+    border: 0;
     text-align: center;
     padding: 0;
     transition: max-height 0.3s ;
+    scroll-snap-type: mandatory;
+}
+.piecesContent p{
+    margin: 1rem auto;
+    width: 60%;
+    text-align: center;
 }
 .piecesContent img{
-    width:60%;
-    
+    width: 60%;
+    border-radius: 0.5rem;
+    scroll-snap-type: mandatory;
 }
+
 .piecesBtn{
-    background-color:#e4d1b0;
+    background-color: #a5a0ca;
     cursor: pointer;
-    border: 3px solid;
-    border-radius: 5px;
-    border-color: #b18863;
+    border-radius: 0.5rem;
+    border: 0;
     display: flex;
-    padding: 12px;
+    padding: 1rem;
     margin: 10px 0;
     animation-name: button;
     animation-duration: 0.2s ;
@@ -121,97 +106,20 @@ img {
     border-color: #99624c;
     color: aliceblue;
 }
+.piecesBtn:after{
+    scroll-snap-type: mandatory;
+}
 /* ---- */
 
 /* -Adding the optimization for mobile devices- */
 @media only screen and (max-width:858px){
-    @font-face{
-        src: url(Gotham-Bold.otf);
-        font-family: Gotham;
-    }
-    
-    body {
-        background-color: rgb(250, 240, 230);
-    }
-    * {
-        color: #1c1a16;
-        box-sizing: border-box;
-        font-family: Gotham, sans-serif;
-      }
-    
-    form {
-        background-color:  #e4d1b0;
-        border-radius: 10px;
-        margin: 0 auto;
-        margin-top: 30px;
-        max-width: 40%;
-        padding: 20px;
-        justify-content: space;
-      }
-    label {
-        display: block;
-        margin-bottom: 10px;
-    }
-    
-    
+
+    form{
         
-    #setup {
-        display: flex;
-        text-align: left;
-        align-items: left;
-    }
-    
-    
-    .item {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        
-    }
-    img {
-        border-radius: 15px;
-        width: 100%;
-        
-    }
-    .banner{
-        margin: 5px;
-        width:80%;
-        border: none;
-        overflow: hidden;
-        margin-top: 0 auto;
-        margin-bottom: 2px;
-    }
-    .banner img{
         max-width: 100%;
-        max-height: 100%;
-        object-fit:contain ;
+        margin: 1rem 0;
+        padding: 1rem;
+        border: 0;
     }
-    
-    #buttons{
-        justify-content: center;
-        display: flex;
-        max-width: 100%;
-        text-align: above;
-        margin: 20 auto;
-    }
-    
-    #setup{
-        height: 100%;
-        width: 100%;
-    }
-    .container header{
-        font-size: 30px;
-        text-decoration: underline;
-        margin: 15px 5px;
-        text-align: center;
-        padding: 10px;
-    }
-    #pieces{
-        border-radius: 10px;
-        margin-top: 30px;
-        padding: 20px;
-        margin-top: 40px auto;
-        text-align: center;
-    }
+
 }

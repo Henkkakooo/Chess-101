@@ -4,59 +4,35 @@
 }
 
 body {
-    background-color: rgb(250, 240, 230);
+    background-color: #d2cae5;
 }
 * {
-    color: #1c1a16;
     box-sizing: border-box;
     font-family: Gotham, sans-serif;
   }
 
-  li {
-    float: left;
-    
-}
-li a {
-    display: block;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    transition: 0.5s background-color;
-}
-li a:hover{
-    background-color: #ecdbbb;
-    cursor: pointer;
-    transition-delay: 0.07s;
-}
-li a:active{
-    background-color: #e8e5c2;
-    opacity: 70%;
-    transform:scale(0.9);
-    
-}
-ul {
-    background-color: #b18863;
-    list-style-type: none; 
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    border-radius: 10px;
-    
-}
-
-
-
-form {
-    background-color: #ead6b1;
-    border-radius: 10px;
-    margin: 0 auto;
+  
+  form {
+    background-color: #464359;
+    border-radius: 1rem;
     margin-top: 30px;
     max-width: 40%;
-    padding: 20px;
-    justify-content: space;
-    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    opacity: 100%;
+    margin-left: 20%;
+    padding: 1rem;
+    justify-content: center;
+    text-align: center;
   }
+#chessFront{
+    color:#fff4ec;
+    text-align: center;
+}
+
+#chessFront:hover{
+    background-color: #9692b3;
+    color:#1c1a16;
+    transition: 0.3s;
+    cursor: pointer;
+}
 
 
 label {
@@ -86,10 +62,18 @@ label {
 }
 
 
-img {
-    border-radius: 15px;
-    width: 85%;
-    width: 85%;
+
+
+@media only screen and (max-width:858px){
+
+    form{
+        
+        max-width: 100%;
+        margin: 1rem 0;
+        padding: 1rem;
+        border: 0;
+    }
+
 }
 .banner{
     margin: 5px;

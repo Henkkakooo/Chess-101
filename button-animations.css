@@ -9,44 +9,40 @@
   }
 }
 .button{
-    margin: 5px;
-    background-color:#e4d1b0;
-    padding: 5px;
+    background-color:#9692b3;
+    padding: 1rem;
+    margin: 1rem;
     cursor: pointer;
-    border: 3px solid;
+    border: none;
     border-radius: 5px;
-    border-color: #b18863;
     animation-name: button;
     animation-duration: 0.2s ;
     animation-timing-function:  cubic-bezier(.26, .53, .74, 1.48);
 }
-
 .button:hover{
-    background-color:#b18863;
-    cursor: pointer;
-    color: aliceblue;
-    transform: translateY(-3px);
-    transition: 0.3s;
+  background-color:#b18863;
+  cursor: pointer;
+  color: #fff4ec;
+  transform: translateY(-3px);
+  transition: 0.3s;
 }
 .button:focus{
-    background-color: #99624c;
-    border-color: #99624c;
-    color: aliceblue;
-    
-    
+  background-color: #99624c;
+  border-color: #99624c;
+  color: #fff4ec;  
 }
 .prev, .next {
+    background-color: #4b3c2f;
     text-align: center;
     align-items: center;
     cursor: pointer;
     top: 50%;
     width: auto;
     padding: 10px;
-    color: #1c1a16;
+    color: #fff4ec;
     font-weight: bold;
     font-size: 18px;
     user-select: none;
-    border:3px solid #b18863;
     transition: 0.2s;
     border-radius: 5px;
   }
@@ -56,58 +52,69 @@
     
   }
   .prev:hover, .next:hover {
-    background-color: #b18863;
+    background-color: #605c78;
     color: aliceblue;
   }
 
 @media only screen and (max-width: 858px){
-    .button{
-        margin: 5px;
-        background-color:#e4d1b0;
-        padding: 5px;
-        cursor: pointer;
-        border: 3px solid;
-        border-radius: 5px;
-        border-color: #b18863;
-        transition: 0.2s;
+  @keyframes button {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
     }
-    .button:hover{
-        background-color:#b18863;
-        cursor: pointer;
-        color: aliceblue;
-        transform: translateY(-3px);
+    100% {
+      opacity:1;
+      transform: scale(1);
     }
-    .button:focus{
+  }
+  .button{
+      margin: 8px;
+      background-color:#9692b3;
+      padding: 6px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      animation-name: button;
+      animation-duration: 0.2s ;
+      animation-timing-function:  cubic-bezier(.26, .53, .74, 1.48);
+  }
+  
+  .button:hover{
+      background-color:#b18863;
+      cursor: pointer;
+      color: #fff4ec;
+      transform: translateY(-3px);
+      transition: 0.3s;
+  }
+  .button:focus{
       background-color: #99624c;
       border-color: #99624c;
-      color: aliceblue;
+      color: #fff4ec;
       
       
   }
-    .prev, .next {
-        text-align: center;
-        align-items: center;
-        cursor: pointer;
-        top: 50%;
-        width: auto;
-        padding: 10px;
-        color: #1c1a16;
-        font-weight: bold;
-        font-size: 18px;
-        user-select: none;
-        border:3px solid #b18863;
-        transition: 0.2s;
-        border-radius: 5px;
-      }
-      .next {
-        align-items: right;
-        border-radius: 5px;
-        
-      }
-      .prev:hover, .next:hover {
-        background-color: #b18863;
-        color: aliceblue;
-      }
-
-}
-
+  .prev, .next {
+      background-color: #4b3c2f;
+      text-align: center;
+      align-items: center;
+      cursor: pointer;
+      top: 50%;
+      width: auto;
+      padding: 10px;
+      color: #fff4ec;
+      font-weight: bold;
+      font-size: 18px;
+      user-select: none;
+      transition: 0.2s;
+      border-radius: 5px;
+    }
+    .next {
+      align-items: right;
+      border-radius: 5px;
+      
+    }
+    .prev:hover, .next:hover {
+      background-color: #605c78;
+      color: aliceblue;
+    }
+  }

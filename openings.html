@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
-    <ul id="navigation">
+    <ul class="navbar">
         <div class="banner">
             <a href="index.html">
-            <img src="banner.png" alt="">
+            <img src="banner2.png" alt="">
             </a>
         </div>
         <li><a href="index.html">Home</a></li>
@@ -22,9 +22,10 @@
         <li><a href="professionals.html">Professionals</a></li>
     </ul>
     <form id="openings">
-        <header>
+        
+        <h1>
             Here you will learn the basic openings of chess!
-        </header>
+        </h1>
         <p>
             The purpose of these informing, theoretic openings are to
             create a foundation from which to develop your pieces.
@@ -36,20 +37,33 @@
                 <button class="button" id="openingsWhite">Openings with white</button>
                 <button class="button" id="openingsBlack">Openings with black</button>
             </div>
+            <div class="difficultyContainer">
+                <img src="Difficulty levels/difficulty level1.png" alt="">
+                <h3>
+                    Difficulty = Beginner
+                </h3>
+                <img src="Difficulty levels/difficulty level2.png" alt="">
+                <h3>
+                    Difficulty = Intermediate
+                </h3>
+                <img src="Difficulty levels/difficulty level3.png" alt="">
+                <h3>
+                    Difficulty = Advanced
+                </h3>
+            </div>
     </form>
-
-    <form id="whiteOp" style="display: none;">
-        <button class="button" id="londonBtn">London System (d4)</button>
-        <button class="button" id="gambitBtn">Queens Gambit (d4)</button>
-        <button class="button" id="lopezBtn">Ruy Lopez (e4)</button>
-    </form>
-
-    <form id="blackOp" style="display: none;">
-        <button class="button" id="kannBtn">Caro-Kann Defence</button>
-        <button class="button" id="knightsBtn">Two Knigths Defence</button>
-        <button class="button" id="indianBtn">King's indian Defence</button>
-    </form>
-
+    <div class="openingsContainer">
+        <form id="whiteOp" style="display: none;">
+            <button class="button" id="londonBtn">London System (d4)</button>
+            <button class="button" id="gambitBtn">Queens Gambit (d4)</button>
+            <button class="button" id="lopezBtn">Ruy Lopez (e4)</button>
+        </form>
+        <form id="blackOp" style="display: none;">
+            <button class="button" id="kannBtn">Caro-Kann Defence</button>
+            <button class="button" id="knightsBtn">Two Knigths Defence</button>
+            <button class="button" id="indianBtn">King's indian Defence</button>
+        </form>
+    </div>
     <form id="formL" style="display: none;" class="openingContainer">
         <div class="london">
             <div class="controlBtns">
