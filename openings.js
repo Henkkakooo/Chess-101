@@ -11,6 +11,9 @@ londonBtn.addEventListener("click", function(e){
     formL.style.display = formL.style.display === "none" ? "block": "none";
     formQ.style.display = "none";
     formR.style.display = "none";
+    formCExc.style.display = "none";
+    formCadv.style.display = "none";
+    variationsCaro.style.display = "none";
     window.scrollTo(0, document.body.scrollHeight);
 });
 
@@ -20,6 +23,9 @@ gambitBtn.addEventListener("click", function(e){
     formQ.style.display = formQ.style.display === "none" ? "block": "none";
     formL.style.display = "none";
     formR.style.display = "none";
+    formCExc.style.display = "none";
+    formCadv.style.display = "none";
+    variationsCaro.style.display = "none";
     window.scrollTo(0, document.body.scrollHeight);
 });
     
@@ -29,6 +35,9 @@ lopezBtn.addEventListener("click", function(e){
     formR.style.display = formR.style.display === "none" ? "block": "none";
     formL.style.display = "none";
     formQ.style.display = "none";
+    formCExc.style.display = "none";
+    formCadv.style.display = "none";
+    variationsCaro.style.display = "none";
     window.scrollTo(0, document.body.scrollHeight);
 });
 
@@ -38,13 +47,35 @@ const kannBtn = document.getElementById('kannBtn');
 const knightsBtn = document.getElementById('knightsBtn');
 const indianBtn = document.getElementById('indianBtn');
 const formI = document.getElementById('formI');
-const formC = document.getElementById('formC');
+const formCadv = document.getElementById('formCAdv');
+const formCExc = document.getElementById('formCExc');
 const formK = document.getElementById('formK');
+const exchangeBtn = document.getElementById("echange")
+const advanceBtn = document.getElementById("advance")
+const variationsCaro = document.getElementById("variationsCaro")
 
 kannBtn.addEventListener("click", function(e){
     e.preventDefault();
 
-    formC.style.display = formC.style.display === "none" ? "block": "none";
+    formK.style.display = "none";
+    formI.style.display = "none";
+    variationsCaro.style.display = "block"
+    window.scrollTo(0, document.body.scrollHeight);
+});
+exchangeBtn.addEventListener("click", function(e){
+    e.preventDefault();
+    
+    formCExc.style.display = formCExc.style.display === "none" ? "block": "none";
+    formCadv.style.display ="none";
+    formK.style.display = "none";
+    formI.style.display = "none";
+    window.scrollTo(0, document.body.scrollHeight);
+});
+advanceBtn.addEventListener("click", function(e){
+    e.preventDefault();
+    
+    formCadv.style.display = formCadv.style.display === "none" ? "block": "none";
+    formCExc.style.display = "none";
     formK.style.display = "none";
     formI.style.display = "none";
     window.scrollTo(0, document.body.scrollHeight);
@@ -54,8 +85,10 @@ knightsBtn.addEventListener("click", function(e){
     e.preventDefault();
 
     formK.style.display = formK.style.display === "none" ? "block": "none";
-    formC.style.display = "none";
+    formCExc.style.display = "none";
+    formCadv.style.display = "none";
     formI.style.display = "none";
+    variationsCaro.style.display = "none";
     window.scrollTo(0, document.body.scrollHeight);
 });
 
@@ -63,8 +96,10 @@ indianBtn.addEventListener("click", function(e){
     e.preventDefault();
 
     formI.style.display = formI.style.display === "none" ? "block": "none";
-    formC.style.display = "none";
+    formCExc.style.display = "none";
+    formCadv.style.display ="none"
     formK.style.display = "none";
+    variationsCaro.style.display = "none";
     window.scrollTo(0, document.body.scrollHeight);
 });
 
@@ -74,17 +109,22 @@ const BtnB = document.getElementById('openingsBlack');
 const formW = document.getElementById('whiteOp');
 const formB = document.getElementById('blackOp');
 
+
 BtnW.addEventListener("click", function(e){
     e.preventDefault();
     
     formW.style.display = formW.style.display === "none" ? "block": "none";
     formB.style.display = "none";
-    formC.style.display = "none";
+    formCExc.style.display = "none";
+    formCadv.style.display = "none";
     formK.style.display = "none";
     formI.style.display = "none";
     formQ.style.display = "none";
     formR.style.display = "none";
     formL.style.display = "none";
+    formCExc.style.display = "none";
+    formCadv.style.display = "none";
+    variationsCaro.style.display = "none";
     window.scrollTo(0, document.body.scrollHeight);
 });
 
@@ -93,12 +133,16 @@ BtnB.addEventListener("click", function(e){
     
     formB.style.display = formB.style.display === "none" ? "block": "none";
     formW.style.display = "none";
-    formC.style.display = "none";
+    formCExc.style.display = "none";
+    formCadv.style.display = "none";
     formK.style.display = "none";
     formI.style.display = "none";
     formQ.style.display = "none";
     formR.style.display = "none";
     formL.style.display = "none";
+    formCExc.style.display = "none";
+    formCadv.style.display = "none";
+    variationsCaro.style.display = "none";
     window.scrollTo(0, document.body.scrollHeight);
 
     
@@ -169,7 +213,46 @@ function showSlide3(b) {
     slides3[slideIndex3].style.display = "block";
     
 }
+let slideIndexK = 0;
+showSlideK(slideIndexK);
 
+function changeSlideKA(k) {
+    showSlideK(slideIndexK += k);
+}
+
+function showSlideK(k) {
+    let slidesK = document.getElementsByClassName("slideK");
+    if (k >= slidesK.length) {
+        slideIndexK = 0;
+    } else if (k < 0) {
+        slideIndexK = slidesK.length - 1;
+    }
+    for (let c = 0; c < slidesK.length; c++) {
+        slidesK[c].style.display = "none";
+    }
+    slidesK[slideIndexK].style.display = "block";
+    
+}
+let slideIndexKE = 0;
+showSlideKE(slideIndexKE);
+
+function changeSlideKE(ex) {
+    showSlideKE(slideIndexKE += ex);
+}
+
+function showSlideKE(ex) {
+    let slidesKE = document.getElementsByClassName("slideKE");
+    if (ex >= slidesKE.length) {
+        slideIndexKE = 0;
+    } else if (ex < 0) {
+        slideIndexKE = slidesKE.length - 1;
+    }
+    for (let xc = 0; xc < slidesKE.length; xc++) {
+        slidesKE[xc].style.display = "none";
+    }
+    slidesKE[slideIndexKE].style.display = "block";
+    
+}
     
     
 

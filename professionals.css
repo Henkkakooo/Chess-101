@@ -12,16 +12,16 @@ body {
     font-family: Gotham, sans-serif;
   }
 form {
-    background-color: #e4d1b0;
-    border-radius: 10px;
-    margin-left: 200px;
+    background-color: #464359;
+    border-radius: 1rem;
     margin-top: 30px;
-    max-width: 40%;
-    padding: 20px;
-    justify-content: space;
-    
-    
-}
+    max-width: 50%;
+    margin: 1rem auto;
+    padding: 1rem;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  }
 
 label {
     display: block;

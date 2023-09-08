@@ -19,13 +19,18 @@ body {
     background-color: #464359;
     border-radius: 1rem;
     margin-top: 30px;
-    max-width: 40%;
-    margin-left: 20%;
+    max-width: 50%;
+    margin: 1rem auto;
     padding: 1rem;
     justify-content: center;
     text-align: center;
+    overflow: hidden;
   }
-
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
 label {
     display: block;
     margin-bottom: 10px;
