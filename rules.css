@@ -35,13 +35,7 @@ label {
     display: block;
     margin-bottom: 10px;
 }
-#setup {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    width: 60%;
-    padding: 2rem;
-}
+
 #setup p {
     text-align: center;
     margin: 2rem 2rem;
@@ -117,7 +111,7 @@ label {
 /* ---- */
 
 /* -Adding the optimization for mobile devices- */
-@media only screen and (max-width:858px){
+@media (max-width:858px){
 
     form{
         
@@ -125,6 +119,8 @@ label {
         margin: 1rem 0;
         padding: 1rem;
         border: 0;
+        
     }
+    
 
 }
