@@ -7,11 +7,12 @@ body {
     background-color: #d2cae5;
 }
 * {
-    color: #1c1a16;
+    color:#fff4ec;
     box-sizing: border-box;
     font-family: Gotham, sans-serif;
   }
 
+  
   form {
     background-color: #464359;
     border-radius: 1rem;
@@ -23,35 +24,47 @@ body {
     text-align: center;
     overflow: hidden;
   }
-  
-form:hover{
-    transform: scale(0.99);
-    opacity: 110%;
-}
 
-label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-.button{
-    margin: 5px;
-    border:none;
-    text-decoration: none;
+@keyframes button {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    100% {
+      opacity:1;
+      transform: scale(1);
+    }
+  }
+  .button{
+      background-color:#8781b7;
+      padding: 1rem;
+      margin: 1rem;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      animation-name: button;
+      animation-duration: 0.2s ;
+      animation-timing-function:  cubic-bezier(.26, .53, .74, 1.48);
+  }
+  .button:hover{
     background-color:#b18863;
-    padding: 5px;
-    border-radius: 5px;
     cursor: pointer;
-    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    color: #fff4ec;
+    transform: translateY(-3px);
+    transition: 0.3s;
+  }
+  .button:focus{
+    background-color: #99624c;
+    border-color: #99624c;
+    color: #fff4ec;  
+  }
+  /* -Adding the optimization for mobile devices- */
+@media (max-width:859px){
+    form{
+        
+        max-width: 100%;
+        margin: 1rem 0;
+        padding: 1rem;
+        border: 0;
+    }
 }
-.button:hover{
-    background-color:#bf9169;
-    cursor: pointer;
-}
-.button:active{
-    background-color:#d0a47d;
-    opacity: 70%;
-    transform:scale(0.9);
-
-}
-
