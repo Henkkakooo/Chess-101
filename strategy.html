@@ -32,8 +32,33 @@
     </form>
     
     <form id="openingForm" class="tipsContainer" style="display:none;">
-        <h1>Opening Tips</h1>
-        
+        <div class="headerContainer">
+            <h1>Opening Tips</h1>
+            <h2>Click the list item to show more!</h2>
+        </div>
+            
+        <ul class="ulList">
+            
+            <li class="formList" >
+                <h2 class="listh2" onclick="showH3(this)">Defend your pieces </h2>
+                <h3 class="listh3" style="display:none;">
+                It's easy to get carried away in a game of Chess,
+                but the most important thing to remember when moving a piece is to
+                check if every piece has been defended by some other piece. Especially the most
+                valuable pieces (rook, queen).
+                </h3>
+                </li>
+            <li class="formList" >
+                <h2 class="listh2" onclick="showH3(this)">Develop with reason</h2>
+                <h3 class="listh3"style="display:none;">
+                Always try to develop with a principled structure.
+                Development after an opening should follow these steps (in theory):
+                Knights before bishops, bishops before rooks and the queen,
+                castling etc.
+                
+                </h3>   
+            </li>
+        </ul>
     </form>
 
 

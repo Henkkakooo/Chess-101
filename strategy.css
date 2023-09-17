@@ -24,6 +24,40 @@ body {
     text-align: center;
     overflow: hidden;
   }
+.ulList{
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: left;
+  background-color:#6f6a8d;
+}
+
+.ulList h2{
+  font-size: 18px;
+  padding: 0.3rem 0;
+}
+.ulList h2:hover{
+  cursor: pointer;
+  color: #322a49;
+  transition: 0.3s;
+}
+
+.ulList h3{
+  font-size: 1rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.headerContainer {
+  background-color: #464359;
+  padding: 2rem;
+  border: none;
+  margin: 0 auto;
+}
+.tipsContainer {
+  padding: 0;
+}
+
+
 
 @keyframes button {
     0% {
@@ -51,7 +85,7 @@ body {
     cursor: pointer;
     color: #fff4ec;
     transform: translateY(-3px);
-    transition: 0.3s;
+    transition: 0.4s ease-in-out;
   }
   .button:focus{
     background-color: #99624c;

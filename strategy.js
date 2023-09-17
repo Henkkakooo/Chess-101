@@ -29,3 +29,12 @@ endGameBtn.addEventListener("click", function(e){
     middleForm.style.display = "none";
 
 });
+
+function showH3(h2Element){
+    var h3Element = h2Element.nextElementSibling;
+    if (h3Element.style.display === "none" || h3Element.style.display === "") {
+        h3Element.style.display = "block";
+    } else {
+        h3Element.style.display = "none";
+    }
+}    
