@@ -20,7 +20,61 @@
         <li><a href="strategy.html">Strategy</a></li>
         <li><a href="professionals.html">Professionals</a></li>
     </ul>
-    <form class="strategy">
+
+    <form id="yesOrNo">
+        <h2>Master the terminology first before checking the tips!</h2>
+        <button class="button" id="terminologyYes">Study chess terminology!</button>
+        <button class="button" id="terminologyNo">No Thanks, i've got it!</button>
+        
+    </form>
+    <form class="terms" id="termsForm" style="display:none;">
+        <button class="button" id="termsBack">Open Strategy</button>
+        <ul class="terms">
+            <li class="termsList">blöö</li>
+            <li class="termsList">blöö</li>
+            <li class="termsList">blöö</li>
+            <li class="termsList">blöö</li>
+            <li class="termsList">blöö</li>
+            <li class="termsList">blöö</li>
+            <li class="termsList">blöö</li>
+            <li class="termsList">blöö</li>
+        </ul>
+        <h2>Try your knowledge by playing a guessing game!</h2>
+        <button class="button" id="termGameBtn">Start Game!</button>
+    </form>
+
+    <!-- Terminology guessing game -->
+    <form id="termsGame" style="display:none;">
+        <h2>Welcome to chess terminology guessing game.</h2>
+        <h3>You have 10 questions and you pass if you get 80% correct.
+            Fill in the required fields.
+        </h3>
+        <div id="termsGameContainer">
+            <h3>Question 1</h3>
+            <input type="text"id="question1">
+            <h3>Question 2</h3>
+            <input type="text"id="question2">
+            <h3>Question 3</h3>
+            <input type="text"id="question3">
+            <h3>Question 4</h3>
+            <input type="text"id="question4">
+            <h3>Question 5</h3>
+            <input type="text"id="question5">
+            <h3>Question 6</h3>
+            <input type="text"id="question6">
+            <h3>Question 7</h3>
+            <input type="text"id="question7">
+            <h3>Question 8</h3>
+            <input type="text"id="question8">
+            <h3>Question 9</h3>
+            <input type="text"id="question9">
+            <h3>Question 10</h3>
+            <input type="text"id="question10">
+        </div>
+    </form>
+
+    <form class="strategy" id="strategy" style="display:none;">
+        <button class="button" id="showTerms">Show terminology</button>
         <h2>
             Here you'll find useful tips & tricks to implement on your games during the opening,
             middle game
@@ -30,6 +84,7 @@
         <button id="middleBtn" class="button">Midlle game tips</button>
         <button id="endGameBtn" class="button">End game tips</button>
     </form>
+    
     
     <form id="openingForm" class="tipsContainer" style="display:none;">
         <div class="headerContainer">
@@ -49,13 +104,30 @@
                 </h3>
                 </li>
             <li class="formList" >
-                <h2 class="listh2" onclick="showH3(this)">Develop with reason</h2>
+                <h2 class="listh2" onclick="showH3(this)">Develop minor pieces</h2>
                 <h3 class="listh3"style="display:none;">
-                Always try to develop with a principled structure.
-                Development after an opening should follow these steps (in theory):
-                Knights before bishops, bishops before rooks and the queen,
-                castling etc.
+                Minor pieces (knigths & bishops) should be developed first before bringing out the queen.
+                You have to be careful not to block any minor pieces with pawn moves and not to stay behind development
+                by moving too many pawns. 
                 
+                </h3>   
+            </li>
+            <li class="formList" >
+                <h2 class="listh2" onclick="showH3(this)">Making a good move</h2>
+                <h3 class="listh3" style="display:none;">
+                Before making the next move, you should always look for checks, captures and attacks.
+                Then evaluate - is the possible check, capture or attack a good one?
+                If one of these three steps lead to a better position than you had before, then go for it.
+                If not, then defend and fortify your position.
+                </h3>   
+            </li>
+            <li class="formList" >
+                <h2 class="listh2" onclick="showH3(this)">Move each piece only once</h2>
+                <h3 class="listh3"style="display:none;">
+                    By moving each piece only once, you'll be able to develop your pieces more efficiently.
+                    This means not getting carried away with chasing the opponents piece with many moves with the same piece
+                    for example, attacking the opponents queen with many knight moves. Usually making too many repetitive moves will result
+                    in a lack of development and a worse position. 
                 </h3>   
             </li>
         </ul>
@@ -63,12 +135,60 @@
 
 
     <form id="middleForm" class="tipsContainer" style="display:none;">
-        <h1>Middle Game Tips</h1>
+        <ul class="ulList">
+            <li class="formList">
+                <h2 class="listh2" onclick="showH3(this)">Notice unguarded squares</h2>
+                <h3 class="listh3" style="display:none;">
+                    Notice the unguarded squares and defend them against the opponents attacks.
+                    This will result in a harder to attack position for the opponent.
+                </h3>
+            </li>
+            <li class="formList">
+                <h2 class="listh2" onclick="showH3(this)">Utilize the Rooks</h2>
+                <h3 class="listh3" style="display:none;">
+                    It's easy to forget and when you do, it's usually too late. 
+                    Try to bring out your rooks to the party after castling and having a solid position.
+                    Rooks will provide reinforcements and help closing files.
+                </h3>
+            </li>
+            <li class="formList">
+                <h2 class="listh2" onclick="showH3(this)">Strategize with consideration</h2>
+                <h3 class="listh3" style="display:none;">
+                    It's true that strategies come up naturally during the game if one is observant enough.
+                    But it's also important to analyze the strategy your going with. Visualize the moves, possible countermoves
+                    and make sure it's profitable before going through with your plan.
+                </h3>
+            </li>
+        </ul>   
     </form>
 
 
     <form id="endGameForm" class="tipsContainer" style="display:none;">
-        <h1>End Game Tips</h1>        
+        <ul class="ulList">
+            <li class="formList">
+                <h2 class="listh2" onclick="showH3(this)">Hold on to past pawns</h2>
+                <h3 class="listh3" style="display:none;">
+                    Past pawns are the key to success in the end game. Supporting the past pawn's way to promotion will 
+                    lead to an easy checkmate. 
+                </h3>
+            </li>
+            <li class="formList">
+                <h2 class="listh2" onclick="showH3(this)">Be vary of forks</h2>
+                <h3 class="listh3" style="display:none;">
+                    When moving your pieces in the engame, check for possible forks before deciding the move. 
+                    It's common to loose track of your last pieces and "walk into" a fork. Take a breather, analyze and move your piece to a safe square.
+                </h3>
+            </li>
+            <li class="formList">
+                <h2 class="listh2" onclick="showH3(this)">Stalemate < Checkmate </h2>
+                <h3 class="listh3" style="display:none;">
+                    Having an upper hand in the end game can be exhilarating but it's exactly the time to focus the most.
+                    Make sure that the move you're making leads to a check, checkmate OR the opponents king being able to move after.
+                    In some games, the opponent's last resort to not loose is to sacrifice a piece with a stalemate in mind.
+                    You'll avoid any unnecessary stalemates by making sure that the opponents king has a square to move to unless
+                    you have a check / checkmate. 
+            </li>
+        </ul>   
     </form>
 
     <script src="strategy.js"></script>

@@ -2,7 +2,14 @@
     src: url(Gotham-Bold.otf);
     font-family: Gotham;
 }
-
+@font-face{
+  src: url(Gotham-Light.otf);
+  font-family: Gotham-Light;
+}
+@font-face{
+  src: url(Gotham-Black.otf);
+  font-family: Gotham-Black;
+}
 body {
     background-color: #d2cae5;
 }
@@ -12,7 +19,15 @@ body {
     font-family: Gotham, sans-serif;
   }
 
-  
+  #terminologyNo{
+    background-color:#aa7e4b;
+  }
+  #terminologyYes{
+    background-color:#4f9466;
+  }
+  #showTerms{
+    background-color:#4f9466;
+  }
   form {
     background-color: #464359;
     border-radius: 1rem;
@@ -24,6 +39,8 @@ body {
     text-align: center;
     overflow: hidden;
   }
+
+
 .ulList{
   list-style-type: none;
   margin: 0 auto;
@@ -32,17 +49,25 @@ body {
   background-color:#6f6a8d;
 }
 
-.ulList h2{
+.listh2 {
+  font-family: Gotham-Black, sans-serif;
+  margin: 1rem;
+  letter-spacing: 0.8px;
   font-size: 18px;
   padding: 0.3rem 0;
 }
-.ulList h2:hover{
+.listh2:hover{
   cursor: pointer;
   color: #322a49;
   transition: 0.3s;
 }
-
-.ulList h3{
+.listh2:focus{
+  color: #322a49;
+}
+.listh3{
+  font-family: Gotham-Light, sans-serif;
+  line-height: 140%;
+  margin: 0.5rem;
   font-size: 1rem;
   text-align: justify;
   text-justify: inter-word;
