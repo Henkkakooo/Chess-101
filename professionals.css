@@ -2,12 +2,20 @@
     src: url(Gotham-Bold.otf);
     font-family: Gotham;
 }
+@font-face{
+    src: url(Gotham-Light.otf);
+    font-family: Gotham-Light;
+  }
+  @font-face{
+    src: url(Gotham-Black.otf);
+    font-family: Gotham-Black;
+  }
 
 body {
     background-color: #d2cae5;
 }
 * {
-    color: #1c1a16;
+    color:#fff4ec;
     box-sizing: border-box;
     font-family: Gotham, sans-serif;
   }
@@ -23,11 +31,25 @@ form {
     overflow: hidden;
   }
 
-label {
-    display: block;
-    margin-bottom: 10px;
+.professionals img {
+    text-align: center;
+    max-width: 40%;
+    border: #e6e5ec 5px solid;
+    border-radius: 0.2rem;
+}
+.professionals img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
 }
 
+h4 {
+    
+    letter-spacing: 1px;
+    font-family: Gotham-Black, sans-serif;
+    padding: 0;
+    text-align: left;
+}
 .button{
     margin: 5px;
     border:none;
@@ -49,4 +71,23 @@ label {
     
 }
 
-
+.professionals{
+    padding:1rem;
+    display: flex;
+}
+.proContainer {
+    padding: 1rem;
+}
+.proContainer li {
+    text-align: left;
+    padding: 0.2rem;
+}
+@media (max-width:1208px){
+    form{
+        
+        max-width: 100%;
+        margin: 1rem 0;
+        padding: 1rem;
+        border: 0;
+    }
+}
