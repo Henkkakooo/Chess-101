@@ -2,6 +2,14 @@
     src: url(Gotham-Bold.otf);
     font-family: Gotham;
 }
+@font-face{
+    src: url(Gotham-Light.otf);
+    font-family: Gotham-Light;
+  }
+  @font-face{
+    src: url(Gotham-Black.otf);
+    font-family: Gotham-Black;
+  }
 
 html {
     scroll-behavior: smooth;
@@ -35,7 +43,15 @@ label {
     display: block;
     margin-bottom: 10px;
 }
-
+.rulesContainer h2{
+    font-family: Gotham-Black;
+    letter-spacing: 1px;
+}
+.rulesContainer h4{
+    line-height: 120%;
+    text-align: justify;
+    justify-content: space-around;
+}
 #setup p {
     text-align: center;
     margin: 2rem 2rem;

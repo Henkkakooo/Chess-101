@@ -44,12 +44,8 @@ lopezBtn.addEventListener("click", function(e){
 
 
 const kannBtn = document.getElementById('kannBtn');
-const knightsBtn = document.getElementById('knightsBtn');
-const indianBtn = document.getElementById('indianBtn');
-const formI = document.getElementById('formI');
 const formCadv = document.getElementById('formCAdv');
 const formCExc = document.getElementById('formCExc');
-const formK = document.getElementById('formK');
 const exchangeBtn = document.getElementById("echange")
 const advanceBtn = document.getElementById("advance")
 const variationsCaro = document.getElementById("variationsCaro")
@@ -57,8 +53,6 @@ const variationsCaro = document.getElementById("variationsCaro")
 kannBtn.addEventListener("click", function(e){
     e.preventDefault();
 
-    formK.style.display = "none";
-    formI.style.display = "none";
     variationsCaro.style.display = "block"
     window.scrollTo(0, document.body.scrollHeight);
 });
@@ -67,8 +61,7 @@ exchangeBtn.addEventListener("click", function(e){
     
     formCExc.style.display = formCExc.style.display === "none" ? "block": "none";
     formCadv.style.display ="none";
-    formK.style.display = "none";
-    formI.style.display = "none";
+
     window.scrollTo(0, document.body.scrollHeight);
 });
 advanceBtn.addEventListener("click", function(e){
@@ -76,32 +69,11 @@ advanceBtn.addEventListener("click", function(e){
     
     formCadv.style.display = formCadv.style.display === "none" ? "block": "none";
     formCExc.style.display = "none";
-    formK.style.display = "none";
-    formI.style.display = "none";
+
     window.scrollTo(0, document.body.scrollHeight);
 });
 
-knightsBtn.addEventListener("click", function(e){
-    e.preventDefault();
 
-    formK.style.display = formK.style.display === "none" ? "block": "none";
-    formCExc.style.display = "none";
-    formCadv.style.display = "none";
-    formI.style.display = "none";
-    variationsCaro.style.display = "none";
-    window.scrollTo(0, document.body.scrollHeight);
-});
-
-indianBtn.addEventListener("click", function(e){
-    e.preventDefault();
-
-    formI.style.display = formI.style.display === "none" ? "block": "none";
-    formCExc.style.display = "none";
-    formCadv.style.display ="none"
-    formK.style.display = "none";
-    variationsCaro.style.display = "none";
-    window.scrollTo(0, document.body.scrollHeight);
-});
 
 
 const BtnW = document.getElementById('openingsWhite');
@@ -117,8 +89,7 @@ BtnW.addEventListener("click", function(e){
     formB.style.display = "none";
     formCExc.style.display = "none";
     formCadv.style.display = "none";
-    formK.style.display = "none";
-    formI.style.display = "none";
+
     formQ.style.display = "none";
     formR.style.display = "none";
     formL.style.display = "none";
@@ -135,8 +106,7 @@ BtnB.addEventListener("click", function(e){
     formW.style.display = "none";
     formCExc.style.display = "none";
     formCadv.style.display = "none";
-    formK.style.display = "none";
-    formI.style.display = "none";
+
     formQ.style.display = "none";
     formR.style.display = "none";
     formL.style.display = "none";
