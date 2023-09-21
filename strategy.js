@@ -24,7 +24,9 @@ termsYes.addEventListener("click", function(e){
     e.preventDefault();
     termsForm.style.display = termsForm.style.display === "none"? "block" : "none";
     yesOrNo.style.display = "none";
-
+    openingForm.style.display = "none";
+    middleForm.style.display = "none";
+    endGameForm.style.display = "none";
 });
 
 termsNo.addEventListener("click", function(e){
@@ -38,6 +40,9 @@ showTerms.addEventListener("click", function(e){
     e.preventDefault();
     termsForm.style.display = termsForm.style.display === "none"? "block" : "none";
     strategyForm.style.display = "none";
+    openingForm.style.display = "none";
+    middleForm.style.display = "none";
+    endGameForm.style.display = "none";
 });
 
 openingBtn.addEventListener("click", function(e){
@@ -69,7 +74,31 @@ function showH3(h2Element){
     var h3Element = h2Element.nextElementSibling;
     if (h3Element.style.display === "none" || h3Element.style.display === "") {
         h3Element.style.display = "block";
+        h2Element.style.transform = "translateX(5px)";
+        h2Element.style.color = "#d7cef1";
+        h2Element.style.fontSize = "25px";
+        h3Element.style.padding = "1rem";
     } else {
         h3Element.style.display = "none";
+        h2Element.style.fontSize = "18px";
+        h2Element.style.transform = "translateX(0px)";
+        h2Element.style.color = "#fff4ec";
+    }
+}    
+
+
+function showH4(h3Element){
+    var h4Element = h3Element.nextElementSibling;
+    if (h4Element.style.display === "none" || h4Element.style.display === "") {
+        h4Element.style.display = "block";
+        h3Element.style.transform = "translateX(5px)";
+        h3Element.style.color = "#d7cef1";
+        h3Element.style.fontSize = "25px";
+        h4Element.style.padding = "1rem";
+    } else {
+        h3Element.style.fontSize = "18px";
+        h4Element.style.display = "none";
+        h3Element.style.transform = "translateX(0px)";
+        h3Element.style.color = "#fff4ec";
     }
 }    

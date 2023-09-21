@@ -27,17 +27,97 @@
         <button class="button" id="terminologyNo">No Thanks, i've got it!</button>
         
     </form>
-    <form class="terms" id="termsForm" style="display:none;">
-        <button class="button" id="termsBack">Open Strategy</button>
+    <form class="termsForm" id="termsForm" style="display:none;">
+        <div class="termsInner">
+            <button class="button" id="termsBack">Show Strategies</button>
+            <h2 class="termsHeader">
+                Here's all the necessary terminology for a beginner
+            </h2>
+        </div>
+        
         <ul class="terms">
-            <li class="termsList">blöö</li>
-            <li class="termsList">blöö</li>
-            <li class="termsList">blöö</li>
-            <li class="termsList">blöö</li>
-            <li class="termsList">blöö</li>
-            <li class="termsList">blöö</li>
-            <li class="termsList">blöö</li>
-            <li class="termsList">blöö</li>
+            <li class="termsList">
+                <h3 class="termsh3" onclick="showH4(this)">Absolute pin</h3>
+                <h4 class="termsh4" style="display:none;">
+                    The piece that's "pinned" 
+                    is in front of the king, making it (the piece in front) illegal to move
+                </h4>
+            <li class="termsList">
+                <h3 class="termsh3" onclick="showH4(this)">Back rank</h3>
+                <h4 class="termsh4" style="display:none;">
+                    The players first rank (where the king is positioned)
+                </h4>
+            </li>
+            <li class="termsList">
+                <h3 class="termsh3" onclick="showH4(this)">Blunder</h3>
+                <h4 class="termsh4" style="display:none;">
+                    Making a bad move that results in loss of material
+                </h4>
+            </li>
+            <li class="termsList">
+                <h3 class="termsh3" onclick="showH4(this)">Capture</h3>
+                <h4 class="termsh4" style="display:none;">
+                    Capturing a piece
+                </h4>
+            </li>
+            <li class="termsList">
+                <h3 class="termsh3" onclick="showH4(this)">Checkmate</h3>
+                <h4 class="termsh4" style="display:none;">
+                    Checkmate is given when a player’s king is threatened with capture and there’s no way 
+                    to evade the capture
+                </h4>
+            </li>
+            <li class="termsList">
+                <h3 class="termsh3" onclick="showH4(this)">File</h3>
+                <h4 class="termsh4" style="display:none;">
+                    A vertical column on the chess board
+                </h4>
+            </li>
+            <li class="termsList">
+                <h3 class="termsh3" onclick="showH4(this)">Fork</h3>
+                <h4 class="termsh4" style="display:none;">
+                    A simultaneous attack on two or more of the oppontents pieces resulting in material gain.
+                </h4>
+            </li>
+            <li class="termsList">
+                <h3 class="termsh3" onclick="showH4(this)">Castling</h3>
+                <h4 class="termsh4" style="display:none;">
+                    King moves two spaces to it's right/left - rook moves to the opposite side of the king
+                </h4>
+            </li>
+            <li class="termsList">
+                <h3 class="termsh3" onclick="showH4(this)">Major pieces</h3>
+                <h4 class="termsh4 " style="display:none;">
+                    Queen and Rooks
+                </h4>
+            </li>
+            <li class="termsList">
+                <h3 class="termsh3" onclick="showH4(this)">Minor Pieces</h3>
+                <h4 class="termsh4" style="display:none;">
+                    Knights and Bishops
+                </h4>
+            </li>
+            <li class="termsList">
+                <h3 class="termsh3" onclick="showH4(this)">Pin</h3>
+                <h4 class="termsh4" style="display:none;">
+                    Pin is where a player has one or more pieces in front of a (valuable) piece
+                    making it vunerable to a capture if moved
+                </h4>
+            </li>
+            <li class="termsList">
+                <h3 class="termsh3" onclick="showH4(this)">Promoting a Pawn</h3>
+                <h4 class="termsh4" style="display:none;">
+                    Moving the pawn to the opponents back rank makes it possible to promote
+                    the pawn into any other piece for example, a queen
+                </h4>
+            </li>
+            <li class="termsList">
+                <h3 class="termsh3" onclick="showH4(this)">Stalemate</h3>
+                <h4 class="termsh4" style="display:none;">
+                    Stalemate is a situation in which the opposing player has
+                    no legal moves left - results in a draw
+                </h4>
+            </li>
         </ul>
         <!-- 
         <h2>Try your knowledge by playing a guessing game!</h2>

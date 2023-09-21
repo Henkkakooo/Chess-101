@@ -10,8 +10,9 @@
   src: url(Gotham-Black.otf);
   font-family: Gotham-Black;
 }
+
 body {
-    background-color: #d2cae5;
+  background-color: #d2cae5;
 }
 * {
     color:#fff4ec;
@@ -19,27 +20,40 @@ body {
     font-family: Gotham, sans-serif;
   }
 
-  #terminologyNo{
-    background-color:#aa7e4b;
-  }
-  #terminologyYes{
-    background-color:#4f9466;
-  }
-  #showTerms{
-    background-color:#4f9466;
-  }
-  form {
-    background-color: #464359;
-    border-radius: 1rem;
-    margin-top: 30px;
-    max-width: 50%;
-    margin: 1rem auto;
-    padding: 1rem;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
-  }
+  
+form {
+  background-color: #464359;
+  border-radius: 1rem;
+  margin-top: 30px;
+  max-width: 50%;
+  margin: 1rem auto;
+  padding: 1rem;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
 
+#terminologyNo{
+  background-color:#aa7e4b;
+}
+#terminologyNo:hover{
+  background-color:#da9c56;
+  transition:0.3s;
+}
+#terminologyYes{
+  background-color:#4f9466;
+}
+#terminologyYes:hover{
+  background-color:#5fb47c;
+  transition:0.3s;
+}
+#showTerms{
+  background-color:#4f9466;
+}
+#showTerms:hover{
+  background-color:#5fb47c;
+  transition:0.3s;
+}
 
 .ulList{
   list-style-type: none;
@@ -57,9 +71,10 @@ body {
   padding: 0.3rem 0;
 }
 .listh2:hover{
-  cursor: pointer;
-  color: #322a49;
-  transition: 0.3s;
+  color: #d7cef1 !important;
+  cursor:pointer !important;
+  transform: translateX(5px) !important;
+  transition: 0.3s !important;
 }
 .listh2:focus{
   color: #322a49;
@@ -82,6 +97,36 @@ body {
   padding: 0;
 }
 
+.termsh3{
+  padding: 0 1rem;
+  text-align: left;
+  font-family: Gotham-Black;
+  letter-spacing: 1.2px;
+}
+.termsh3:hover{
+  color: #d7cef1 !important;
+  cursor:pointer !important;
+  transform: translateX(5px) !important;
+  transition: 0.2s ease !important;
+}
+.termsHeader{
+  text-align: center ;
+  padding: 1rem;
+}
+.termsInner{
+  padding: 1rem;
+  background-color: #464359;
+}
+.termsForm{
+  padding: 0;
+  background-color: #6f6a8d;
+  line-height: 110%;
+}
+.termsh4{
+  text-align: left;
+  font-family: Gotham-Light;
+  padding:0;
+}
 
 
 @keyframes button {
