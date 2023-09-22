@@ -37,6 +37,7 @@
 .banner img {
     width: 12rem;
     filter: invert();
+    border-radius: 0 !important;
 }
 
 @media only screen and (max-width:858px){
