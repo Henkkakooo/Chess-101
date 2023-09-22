@@ -1,0 +1,142 @@
+@font-face{
+    src: url(/chess101/Fonts/Gotham-Bold.otf);
+    font-family: Gotham;
+}
+@font-face{
+    src: url(/chess101/Fonts/Gotham-Light.otf);
+    font-family: Gotham-Light;
+  }
+  @font-face{
+    src: url(/chess101/Fonts/Gotham-Black.otf);
+    font-family: Gotham-Black;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #d2cae5;
+}
+* {
+    color: #fff4ec;
+    box-sizing: border-box;
+    font-family: Gotham, sans-serif;
+  }
+
+  form {
+    background-color: #464359;
+    border-radius: 1rem;
+    margin-top: 30px;
+    max-width: 50%;
+    margin: 1rem auto;
+    padding: 1rem;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  }
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+.rulesContainer h2{
+    font-family: Gotham-Black;
+    letter-spacing: 1px;
+}
+.rulesContainer h4{
+    line-height: 120%;
+    text-align: justify;
+    justify-content: space-around;
+}
+#setup p {
+    text-align: center;
+    margin: 2rem 2rem;
+    font-size: 20px;
+}
+
+.container header{
+    font-size: 20px;
+    margin: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+.item p {
+    padding: 1rem;
+    margin: 2rem auto;
+    margin-left: 2rem;
+    text-align:center;
+}
+
+/* Collapsible "Pieces" menu*/
+
+#rules, #pieces{
+    background-color: #605c78;
+}
+.piecesContent {
+    max-height: 0;
+    overflow: hidden;
+    border: 0;
+    text-align: center;
+    padding: 0;
+    transition: max-height 0.3s ;
+    scroll-snap-type: mandatory;
+}
+.piecesContent p{
+    margin: 1rem auto;
+    width: 60%;
+    text-align: center;
+}
+.piecesContent img{
+    width: 60%;
+    border-radius: 0.5rem;
+    scroll-snap-type: mandatory;
+}
+
+.piecesBtn{
+    background-color: #a5a0ca;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border: 0;
+    display: flex;
+    padding: 1rem;
+    margin: 10px 0;
+    animation-name: button;
+    animation-duration: 0.2s ;
+    animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+}
+
+.piecesBtn:hover{
+    background-color:#b18863;
+    cursor: pointer;
+    color: aliceblue;
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
+.piecesBtn:focus{
+    background-color: #99624c;
+    border-color: #99624c;
+    color: aliceblue;
+}
+.piecesBtn:after{
+    scroll-snap-type: mandatory;
+}
+/* ---- */
+
+/* -Adding the optimization for mobile devices- */
+@media (max-width:858px){
+
+    form{
+        
+        max-width: 100%;
+        margin: 1rem 0;
+        padding: 1rem;
+        border: 0;
+        
+    }
+    
+
+}

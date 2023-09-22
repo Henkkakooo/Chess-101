@@ -1,0 +1,150 @@
+@font-face{
+    src: url(/chess101/Fonts/Gotham-Bold.otf);
+    font-family: Gotham;
+}
+@font-face{
+    src: url(/chess101/Fonts/Gotham-Light.otf);
+    font-family: Gotham-Light;
+  }
+  @font-face{
+    src: url(/chess101/Fonts/Gotham-Black.otf);
+    font-family: Gotham-Black;
+  }
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+/* -For desktop use- */
+
+body {
+    background-color: #d2cae5;
+}
+* {
+    color: #fff4ec;
+    box-sizing: border-box;
+    font-family: Gotham, sans-serif;
+    font-size: 12pt;
+  }
+h1 {
+    font-size: 18pt;
+}
+h3{
+    font-size: 10pt;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+form {
+    background-color: #464359;
+    border-radius: 1rem;
+    margin-top: 30px;
+    max-width: 50%;
+    margin: 1rem auto;
+    padding: 1rem;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  }
+
+h2{
+    text-align: center;
+    margin: 2rem;
+}
+ p{
+    text-align: center;
+    padding: 0 5rem;
+    text-justify: inter-word;
+    margin: 2rem;
+}
+
+.difficultyContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#formCExc h1{
+    font-size: 30px;
+    text-decoration: underline;
+    margin: 15px 5px;
+    text-align: center;
+    padding: 10px;
+}
+#formCAdv h1{
+    font-size: 30px;
+    text-decoration: underline;
+    margin: 15px 5px;
+    text-align: center;
+    padding: 10px;
+}
+.openingsContainer form{
+    background-color: #765d59;
+}
+.openingsContainer button{
+    background-color:#a6847f;
+}
+#variationsCaro{
+    background-color: #ad8164;
+}
+#variationsCaro button{
+    background-color: #d6a687;
+}
+#formCAdv, #formCExc{
+    background-color:#b18863 ;
+}
+
+#formL{
+    background-color:#b18863 ;
+}
+
+.london header{
+    font-size: 30px;
+    text-decoration: underline;
+    margin: 15px 5px;
+    text-align: center;
+    padding: 10px;
+}
+#formQ{
+    background-color:#b18863 ;
+}
+.queens header{
+    font-size: 30px;
+    text-decoration: underline;
+    margin: 15px 5px;
+    text-align: center;
+    padding: 10px;
+}
+#formR{
+    background-color:#b18863 ;
+}
+
+.lopez header{
+    font-size: 30px;
+    text-decoration: underline;
+    margin: 15px 5px;
+    text-align: center;
+    padding: 10px;
+}
+.slideQ p{
+    max-height: 300px;
+}
+
+
+
+/* -Adding the optimization for mobile devices- */
+@media (max-width:859px){
+    form{
+        
+        max-width: 100%;
+        margin: 1rem 0;
+        padding: 1rem;
+        border: 0;
+    }
+}

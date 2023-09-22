@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Openings</title>
+    <link rel="stylesheet" href="openings.css">
+    <link rel="stylesheet" href="/chess101/button-animations.css">
+    <link rel="stylesheet" href="/chess101/navbar.css">
+</head>
+<body>
+    <ul class="navbar">
+        <div class="banner">
+            <a href="index.html">
+            <img src="/chess101/Images/banner2.png" alt="">
+            </a>
+        </div>
+        <li><a href="/chess101/Home">Home</a></li>
+        <li><a href="/chess101/Openings">Openings</a></li>
+        <li><a href="/chess101/Rules">Rules</a></li>
+        <li><a href="/chess101/Strategy">Strategy</a></li>
+        <li><a href="/chess101/Professionals">Professionals</a></li>
+    </ul>
+    <form id="openings">
+        
+        <h1>
+            Here you will learn the basic openings of chess!
+        </h1>
+        <h2>
+            The purpose of these informing, theoretic openings are to
+            create a foundation from which to develop your pieces.
+            Basic opening principles such as; defending each piece,
+            hierarchical  move order (pawns before major pieces) 
+            and casting early are all implemented in these following openings.
+        </h2>
+            <div>
+                <button class="button" id="openingsWhite">Openings with white</button>
+                <button class="button" id="openingsBlack">Openings with black</button>
+            </div>
+            <!--
+            <div class="difficultyContainer">
+                <img src="Difficulty levels/difficulty level1.png" alt="">
+                <h3>
+                    Difficulty = Beginner
+                </h3>
+                <img src="Difficulty levels/difficulty level2.png" alt="">
+                <h3>
+                    Difficulty = Intermediate
+                </h3>
+                <img src="Difficulty levels/difficulty level3.png" alt="">
+                <h3>
+                    Difficulty = Advanced
+                </h3>
+            </div>
+            -->
+    </form>
+    <div class="openingsContainer">
+        <form id="whiteOp" style="display: none;">
+            <button class="button" id="londonBtn">London System (d4)</button>
+            <button class="button" id="gambitBtn">Queens Gambit (d4)</button>
+            <button class="button" id="lopezBtn">Ruy Lopez (e4)</button>
+        </form>
+        <form id="blackOp" style="display: none;">
+            <button class="button" id="kannBtn">Caro-Kann Defence</button>
+        </form>
+    </div>
+    <form id="variationsCaro" style="display: none">
+        <button class="button" id="echange">Exchange variation</button>
+        <button class="button" id="advance">Advance variation</button>
+    </form>
+    <form id="formL" style="display: none;" class="openingContainer">
+        <div class="london">
+            <div class="controlBtns">
+                <a class="prev" onclick="changeSlide3(-1)"title="Show the previous move">&#10094;Previous</a>
+                <a class="next" onclick="changeSlide3(1)" title="Show the next move">Next&#10095;</a>
+            </div>
+            <header>
+                London system
+            </header>
+            <div class="slideL">
+                <p>
+                    1. White starts with d4.
+                </p>
+                <img src="/chess101/Images/Opening images L/london1.png">
+            </div>
+            <div class="slideL">
+                <p>
+                    2. Black responds with d5.
+                </p>
+                <img src="/chess101/Images/Opening images L/london2.png" >
+            </div>
+            <div class="slideL">
+                <p>
+                    3. White can here move their bishop to f4 or a knight to f3 like shown.
+                </p>
+                <img src="/chess101/Images/Opening images L/london3.png" >
+            </div>
+            <div class="slideL">
+                <p>
+                    4. Black moves their knight to f6.
+                </p>
+                <img src="/chess101/Images/Opening images L/london4.png" >
+            </div>
+            <div class="slideL">
+                <p>
+                    5. White moves the bishop to f4.
+                </p>
+                <img src="/chess101/Images/Opening images L/london5.png" >
+            </div>
+            <div class="slideL">
+                <p>
+                    6. Black again makes a developing move with knight to c6.
+                </p>
+                <img src="/chess101/Images/Opening images L/london6.png" >
+            </div>
+            <div class="slideL">
+                <p>
+                    7. White continues with e3.
+                </p>
+                <img src="/chess101/Images/Opening images L/london7.png" >
+            </div>
+            <div class="slideL">
+                <p>
+                    8. Black copies white's move with e6.
+                </p>
+                <img src="/chess101/Images/Opening images L/london8.png" >
+            </div>
+            <div class="slideL">
+                <p>
+                    9. Here if white takes, black can take back with the queen and move it to a more
+                    active square.
+                </p>
+                <img src="/chess101/Images/Opening images L/london9.png" >
+            </div>
+            <div class="slideL">
+                <p>
+                    10. White retreats their bishop back to g3. 
+                    This position arises often in London system with white having a slight advantage
+                    in position. From this point forwards there are many strategies for both sides
+                    - for more information about strategies check "Strategies".
+                    
+                </p>
+                <img src="/chess101/Images/Opening images L/london10.png" >
+            </div>
+        </div>
+    </form>
+    <form id="formQ" style="display: none;" class="openingContainer">
+            <div class="queens">
+                <div class="controlBtns">
+                    <a class="prev" onclick="changeSlide2(-1)"title="Show the previous move">&#10094;Previous</a>
+                    <a class="next" onclick="changeSlide2(1)" title="Show the next move">Next&#10095;</a>
+                </div>
+                <header>
+                    Queen's Gambit
+                </header>
+                <div class="slideQ">
+                    <p>
+                        1. Queen's Gambit start with pawn to d4.
+                    </p>
+                    <img src="/chess101/Images/Opening images Q/queens1.png" alt="">
+                </div>
+                <div class="slideQ">
+                    <p>
+                        2. Black responds with d5.
+                    </p>
+                    <img src="/chess101/Images/Opening images Q/queens2.png" alt="">
+                </div>
+                <div class="slideQ">
+                    <p>
+                        3. White continues with c4, gambiting a pawn.
+                    </p>
+                    <img src="/chess101/Images/Opening images Q/queens3.png" alt="">
+                </div>
+                <div class="slideQ">
+                    <p>
+                        4. Black can now accept the gambit and take the pawn. Let's see what happens
+                    </p>
+                    <img src="/chess101/Images/Opening images Q/queens4.png" alt="">
+                </div>
+                <div class="slideQ">
+                    <p>
+                        5. White opens up the diagonal for their light-squared bishop with e3 creating a threat to black.
+                    </p>
+                    <img src="/chess101/Images/Opening images Q/queens5.png" alt="">
+                </div>
+                <div class="slideQ">
+                    <p>
+                        6. If black doesn't defend the pawn, white can simply take and continue development.
+                    </p>
+                    <img src="/chess101/Images/Opening images Q/queens6.png" alt="">
+                </div>
+                <div class="slideQ">
+                    <p>
+                        7. White takes the c4 pawn. Now both players can continue their development.
+                    </p>
+                    <img src="/chess101/Images/Opening images Q/queens7.png" alt="">
+                </div>
+                <div class="slideQ">
+                    <p>
+                        8. In the declined variation, black doesn't take on c4, instead proceeds to develop their pieces.
+                        After the gambit is declined, white can resume on their development.
+                    </p>
+                    <img class="imgq"src="/chess101/Images/Opening images Q/queensd1.PNG" alt="">
+                </div>
+            </div>
+    </form>
+    <form id="formR" style="display: none" class="openingContainer">
+        <div class="lopez">
+            <div class="controlBtns">
+                <a class="prev" onclick="changeSlide(-1)"title="Show the previous move">&#10094;Previous</a>
+                <a class="next" onclick="changeSlide(1)" title="Show the next move">Next&#10095;</a>
+            </div>
+                <header>
+                    Ruy Lopéz
+                </header>
+            <div class="slideR">
+                <p>
+                    1. The White opens with e4 and black responds with e5.
+                </p>
+                <img src="/chess101/Images/Opening images Ruy/lopez1.png" >  
+            </div>
+            <div class="slideR">
+                <p>
+                    2. White threatens the e5 pawn.
+                </p>
+                <img src="/chess101/Images/Opening images Ruy/lopez2.png" >
+            </div>
+            <div class="slideR">
+                <p>
+                    3. Black defends the e5 pawn.
+                </p>
+                <img src="/chess101/Images/Opening images Ruy/lopez3.png" >
+            </div>
+            <div class="slideR">
+                <p>
+                    4. White pins the knight on c6. The Ruy Lopéz- opening is complete.
+                </p>
+                <img src="/chess101/Images/Opening images Ruy/lopez4.png">
+            </div>
+            <div class="slideR">
+                <p>
+                    5. Black's usual response is to kick the bishop out. White
+                    can simply retreat to a4 etc. Otherwise White will keep pinning the knight
+                    and continue their development.
+                </p>
+                <img src="/chess101/Images/Opening images Ruy/lopez5.png" >
+            </div>
+        </div>
+    </form>
+    <form id="formCAdv" style="display: none;">
+        <div class="controlBtns">
+            <a class="prev" onclick="changeSlideKA(-1)"title="Show the previous move">&#10094;Previous</a>
+            <a class="next" onclick="changeSlideKA(1)" title="Show the next move">Next&#10095;</a>
+        </div>
+        <h1>Caro-Kann Advance variation</h1>
+        <div class="slideK">
+            <p>
+                1. The Advance- variation starts by white advancing their central pawn and 
+                closing the center.
+            </p>
+            <img src="/chess101/Images/Opening images Kann/kannad1.png" >  
+        </div>
+        <div class="slideK">
+            <p>
+                2. Again, there's many options for black, but as a beginner, the easiest
+                approach is to push to c5.
+            </p>
+            <img src="/chess101/Images/Opening images Kann/kannad2.png" >  
+        </div>
+        <div class="slideK">
+            <p>
+                3. On this particular game, white takes.
+            </p>
+            <img src="/chess101/Images/Opening images Kann/kannad3.png" >  
+        </div>
+        <div class="slideK">
+            <p>
+                4.  Black develops their knight, preparing e6 (opening up the diagonal
+                for the bishop).
+            </p>
+            <img src="/chess101/Images/Opening images Kann/kannad4.png" >  
+        </div>
+        <div class="slideK">
+            <p>
+                5.White develops their bishop.
+            </p>
+            <img src="/chess101/Images/Opening images Kann/kannad5.png" >  
+        </div>
+        <div class="slideK">
+            <p>
+                6. And now, to not trap the light scored bishop, black
+                pins the knight. When playing Karo Cann, you should always
+                try to get the light scored bishop out before closing the diagonal. 
+                The most active square for the bishop in this opening is to pin the knight.
+            </p>
+            <img src="/chess101/Images/Opening images Kann/kannad6.png" >  
+        </div>
+        <div class="slideK">
+            <p>
+                7. White counters by also pinning the knight, but not really
+                making a forceful threat since the knight is defended.
+            </p>
+            <img src="/chess101/Images/Opening images Kann/kannad7.png" >  
+        </div>
+        <div class="slideK">
+            <p>
+                8.Now black gets to play e6, opening up the discovered attack to white's
+                undefended pawn. 
+            </p>
+            <img src="/chess101/Images/Opening images Kann/kannad8.png" >  
+        </div>
+        <div class="slideK">
+            <p>
+                9. Black has many possible strategies from this point forwards. Taking the c5-pawn, re-routing the king-sided 
+                knight to f5, attacking the white's bishop etc. As said before, many strategies arise from these different openings
+                and now it's your turn to make the position profitable.
+            </p>
+            <img src="/chess101/Images/Opening images Kann/kannad9.png" >  
+        </div>
+    </form>
+    <form id="formCExc" style="display: none;">
+        <div class="kann">
+        <div class="controlBtns">
+            <a class="prev" onclick="changeSlideKE(-1)"title="Show the previous move">&#10094;Previous</a>
+            <a class="next" onclick="changeSlideKE(1)" title="Show the next move">Next&#10095;</a>
+        </div>
+        <h1>Caro-Kann Exchange variation</h1>
+        <div class="slideKE">
+            <p>
+                1. The White opens with e4.
+            </p>
+            <img src="/chess101/Images/Opening images Kann/kann1.png" >  
+        </div>
+        <div class="slideKE">
+            <p>
+                2. Black responds with c3 starting the Karo-Cann defence.
+                Here we'll overview the "Advance" and the "Echange"- variations.
+            </p>
+            <img src="/chess101/Images/Opening images Kann/kann2.png" >  
+        </div>
+        <div class="slideKE">
+            <p>
+                3. White to d4.
+            </p>
+            <img src="/chess101/Images/Opening images Kann/kann3.png" >  
+        </div>
+        <div class="slideKE">
+            <p>
+                4. Black responds with d5.
+            </p>
+            <img src="/chess101/Images/Opening images Kann/kann4.png" >  
+        </div>
+        <div class="slideKE">
+            <p>
+                5. Here white can take, advance the pawn or develop.
+                White decides to take and now the Exchange variation takes place.
+            </p>
+            <img src="/chess101/Images/Opening images Kann/kann5.png" >  
+        </div>
+        <div class="slideKE">
+            <p>
+                6. Black takes the d5 pawn.
+            </p>
+            <img src="/chess101/Images/Opening images Kann/kann6.png" >  
+        </div>
+        <div class="slideKE">
+            <p>
+                7. After the exchange, there's multiple different variations, 
+                but here both sides develop their knights.
+            </p>
+            <img src="/chess101/Images/Opening images Kann/kann7.png" >  
+        </div>
+        <div class="slideKE">
+            <p>
+                8. Black develops their queen-sided knight to keep the tension and to
+                block any checks.
+            </p>
+            <img src="/chess101/Images/Opening images Kann/kann8.png" >  
+        </div>
+        
+        </div>
+    </form>
+    
+
+    
+    <script src="openings.js"></script>
+</body>
+</html>
