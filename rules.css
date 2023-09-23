@@ -1,13 +1,13 @@
 @font-face{
-    src: url(/chess101/Fonts/Gotham-Bold.otf);
+    src: url(Fonts/Gotham-Bold.otf);
     font-family: Gotham;
 }
 @font-face{
-    src: url(/chess101/Fonts/Gotham-Light.otf);
+    src: url(Fonts/Gotham-Light.otf);
     font-family: Gotham-Light;
   }
   @font-face{
-    src: url(/chess101/Fonts/Gotham-Black.otf);
+    src: url(Fonts/Gotham-Black.otf);
     font-family: Gotham-Black;
   }
 
