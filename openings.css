@@ -28,6 +28,11 @@ body {
     font-family: Gotham, sans-serif;
     font-size: 12pt;
   }
+
+.contentContainer {
+    display: flex;
+    margin: 0 auto;
+}
 h1 {
     font-size: 18pt;
 }

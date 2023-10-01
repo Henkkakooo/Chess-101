@@ -70,7 +70,7 @@
   .button{
       margin: 8px;
       background-color:#9692b3;
-      padding: 6px;
+      padding: 1rem;
       cursor: pointer;
       border: none;
       border-radius: 5px;

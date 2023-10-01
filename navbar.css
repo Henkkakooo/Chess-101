@@ -1,23 +1,32 @@
 .navbar{
+    box-shadow: 0 5px 10px #08071f;
     display:flex;
-    justify-content: left;
-    text-decoration: none;
+    justify-content: space-evenly;
     list-style-type: none;
     background-color:#464359;
     overflow: hidden;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    padding-left: 3rem;
+    padding-right: 3rem;
     border-radius: 0.5rem;
+    max-width:fit-content;
+
 }
+
 .navbar li {
+    padding: 0;
+    margin: 0 auto;
     margin-top: auto;
     margin-bottom: 1rem;
   }
   
 .navbar li a {
     color: #fff4ec;
+    margin: 0 auto;
     text-decoration: none;
     padding: 1rem;
+    padding-bottom: 2rem;
     border-radius: 0.5rem;
 }
 .navbar li a:hover{
@@ -31,23 +40,31 @@
     color: #1c1a16;
 }
 .banner {
-    margin: 1rem;
     margin-right: 0;
+    padding: 1rem;
 }
 .banner img {
-    width: 12rem;
+    max-width: 12rem;
+    max-height: auto ;
     filter: invert();
     border-radius: 0 !important;
 }
 
 @media only screen and (max-width:858px){
+
     .navbar {
-        flex-direction:column;
-        align-items: left;
-        margin: 1rem;
+        justify-content: center !important;
+        text-align: center !important;
+        display: flex;
+        flex-direction: column;
+        margin: 0  auto;
+        max-width: 80% !important;
+        padding: 0;
       }
     
-    
+    .navbar li {
+        padding:0.3rem;
+    }
       .navbar li.banner {
         margin: 0;
       }
