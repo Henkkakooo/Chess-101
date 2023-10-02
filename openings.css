@@ -146,11 +146,33 @@ h2{
 
 /* -Adding the optimization for mobile devices- */
 @media (max-width:859px){
-    form{
-        
-        max-width: 100%;
-        margin: 1rem 0;
-        padding: 1rem;
-        border: 0;
-    }
+
+header {
+    font-size: 5vw !important;
+    padding: 2vw !important;
+}
+p{
+    margin: 0 auto;
+    font-size: 3vw !important;
+    padding: 2vw !important;
+}
+.kann h1{
+    font-size: 5vw !important;
+    padding: 2vw !important;
+}
+h1 {
+    font-size: 5vw;
+}
+h2{
+    margin: 0 auto !important;
+    padding: 3vw;
+    text-align: justify !important;
+    font-size: 3vw;
+}
+form {        
+    max-width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 0;
+}
 }

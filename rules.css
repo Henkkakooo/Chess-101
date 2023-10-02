@@ -77,7 +77,9 @@ label {
     background-color: #605c78;
 }
 .piecesContent {
+    margin: 0 auto;
     max-height: 0;
+    max-width: auto;
     overflow: hidden;
     border: 0;
     text-align: center;
@@ -91,7 +93,8 @@ label {
     text-align: center;
 }
 .piecesContent img{
-    width: 60%;
+    padding: 0;
+    width: 30%;
     border-radius: 0.5rem;
     scroll-snap-type: mandatory;
 }

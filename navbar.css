@@ -61,9 +61,13 @@
         max-width: 80% !important;
         padding: 0;
       }
-    
-    .navbar li {
-        padding:0.3rem;
+    .banner img{
+        max-width: 25vw;
+    }
+    .navbar li a {
+        font-size: 3vw !important;
+        padding:2vw !important;
+        margin: 1vw auto;
     }
       .navbar li.banner {
         margin: 0;
