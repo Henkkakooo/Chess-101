@@ -8,6 +8,7 @@
     transform: scale(1);
   }
 }
+
 .button{
     background-color:#8781b7;
     padding: 1rem;
@@ -70,7 +71,7 @@
   .button{
       margin: 8px;
       background-color:#9692b3;
-      font-size: 3vw;
+      font-size: 2vw;
       padding: 2vw;
       cursor: pointer;
       border: none;

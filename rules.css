@@ -26,16 +26,15 @@ body {
   form {
     background-color: #464359;
     border-radius: 1rem;
-    margin-top: 30px;
-    max-width: 50%;
-    margin: 1rem auto;
-    padding: 1rem;
+    max-width: 80%;
+    margin: 2vw ;
+    margin-left: 15vw;
+    padding: 2vw;
     justify-content: center;
     text-align: center;
     overflow: hidden;
   }
 img{
-    max-width: 100%;
     height: auto;
     border-radius: 0.5rem;
 }
@@ -57,6 +56,10 @@ label {
     margin: 2rem 2rem;
     font-size: 20px;
 }
+#setup img {
+    max-width: 30vw;
+    padding: 1vw;
+}
 
 .container header{
     font-size: 20px;
@@ -76,8 +79,21 @@ label {
 #rules, #pieces{
     background-color: #605c78;
 }
+#rules {
+    padding: 2vw;
+    text-justify: center;
+    text-align: justify;
+}
+#rules h4 {
+    font-family: Gotham-Light;
+}
+
+#rules h2, h1{
+    padding: 1vw;
+    border-bottom: 2px solid #fff4ec;
+}
 .piecesContent {
-    margin: 0 auto;
+    margin: 0 auto !important;
     max-height: 0;
     max-width: auto;
     overflow: hidden;
@@ -87,14 +103,15 @@ label {
     transition: max-height 0.3s ;
     scroll-snap-type: mandatory;
 }
-.piecesContent p{
-    margin: 1rem auto;
+.piecesContent p, h1{
+    margin: 1vw auto;
     width: 60%;
+    padding: 0;
     text-align: center;
 }
 .piecesContent img{
     padding: 0;
-    width: 30%;
+    max-width: 20vw;
     border-radius: 0.5rem;
     scroll-snap-type: mandatory;
 }
@@ -132,14 +149,22 @@ label {
 /* -Adding the optimization for mobile devices- */
 @media (max-width:858px){
 
+
+
     form{
         
         max-width: 100%;
-        margin: 1rem 0;
-        padding: 1rem;
+        margin: 2vw 0;
+        padding: 2vw;
         border: 0;
         
     }
     
-
+    h1 {
+        font-size: 3vw;
+    }
+    h2 {
+        padding: 0;
+        font-size: 1vw;
+    }
 }

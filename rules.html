@@ -9,26 +9,28 @@
     <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
-    <ul class="navbar">
-        <div class="banner">
-            <a href="index.html">
-            <img src="Images/banner2.png" alt="">
-            </a>
-        </div>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="openings.html">Openings</a></li>
-        <li><a href="rules.html">Rules</a></li>
-        <li><a href="strategy.html">Strategy</a></li>
-        <li><a href="professionals.html">Professionals</a></li>
-    </ul>
-
-       
+    <div class="navbarContainer">
+        <ul class="navbar">
+            <div class="banner">
+                <a href="index.html">
+                <img src="Images/banner2.png" alt="">
+                </a>
+            </div>
+            <li onclick="window.location.href='index.html'"><a href="index.html">Home</a></li>
+            <li onclick="window.location.href='openings.html'"><a href="openings.html">Openings</a></li>
+            <li onclick="window.location.href='rules.html'"><a href="rules.html">Rules</a></li>
+            <li onclick="window.location.href='strategy.html'"><a href="strategy.html">Strategy</a></li>
+            <li onclick="window.location.href='professionals.html'"><a href="professionals.html">Professionals</a></li>
+        </ul>
+    </div>
+<div class="wrapper">      
        <form id="buttons">
         <p>Here you can find the basic rules of Chess.</p>
         <button class="button" id="sBtn">Setup</button>
         <button class="button" id="pBtn">Pieces</button>
         <button class="button" id="rBtn">Rules</button>
        </form>
+    
 
 <div class="RulesContainer">
         <form id="rules" style="display:none">
@@ -40,8 +42,10 @@
                     <h2>
                         Reaching the Time Limit, Checkmate, Draw or Resignation
                     </h2> 
-                    A game of chess usually has a Time Limit in which a player must make their moves to reach the goal - checkmate. 
-                    If the time runs out, the game ends with a win for the player that still has time left.
+                    <h4>
+                        Game of chess usually has a Time Limit in which a player must make their moves to reach the goal - checkmate. 
+                        If the time runs out, the game ends with a win for the player that still has time left.
+                    </h4>
                 </h4>
                 <h4>
                     Checkmate is given when a player’s king is threatened with capture and there’s no way to evade the capture. 
@@ -121,7 +125,7 @@
                 <img class="img" src="Images/Rules - Pieces/pawn 4.png" alt="">
         </div>
     </form>
-
+</div> 
 
     <script src="rules.js"></script>
 </body>

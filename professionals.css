@@ -35,10 +35,12 @@ form {
     margin: 0 auto;
 }
 .content{
+    justify-content: space-between;
     max-width: 100%;
-    margin:0 auto;
-    padding:1rem;
-    display: flex;
+    margin-right: 0 auto;
+    margin-left: 15vw;
+    padding:0;
+    
 }
 
 * {
@@ -48,9 +50,9 @@ form {
   }
 .proImage {
     box-shadow: 0px 5px 10px #181616;
-    max-width: 8vw;
+    max-width: 12vw;
     padding: 0;
-    margin: 1vw auto;
+    margin: 2vw ;
     border: #e6e5ec 0.3rem solid;
     border-radius: 0.2rem;
 }
@@ -70,6 +72,7 @@ h4 {
 }
 
 .professionals{
+    justify-content: space-around;
     text-align: center;
     max-width: 100%;
     margin:0 auto;
@@ -92,15 +95,24 @@ h4 {
 
 @media (max-width:859px){
 
+    .wrapper {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
     .professionals {
         text-align: center;
         max-width: 100%;
         justify-content: center;
         margin: 0 auto;
-        padding: 2rem;
+        padding: 0;
+    }
+    h4 {
+        margin: 2vw 0;
+       padding: 0;
     }
     h1 {
         font-size: 5vw;
+        padding: 0;
     }
     .content li, h4 {
         font-size: 3vw;
@@ -110,12 +122,31 @@ h4 {
     }
     .content {
         max-width: 100%;
-        margin: 0 auto;
-        padding: 1rem;
+        margin: 2vw auto;
+        padding: 0;
     }
     .proContainer{
         padding: 0;
         margin: 0 auto;
     }
-
+    .proList {
+        justify-content: space-around;
+        margin: 2vw;
+        padding: 2vw;
+    }
+    .proList li {
+        padding: 0;
+    }
 }   
+
+@media (max-width:420px){
+
+    .professionals img {
+        max-width: 25vw;
+    }
+    .proContainer {
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+    }
+    
+}

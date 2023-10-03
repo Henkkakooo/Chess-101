@@ -9,19 +9,22 @@
     <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
-    <ul class="navbar">
-        <div class="banner">
-            <a href="index.html">
-            <img src="Images/banner2.png" alt="">
-            </a>
-        </div>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="openings.html">Openings</a></li>
-        <li><a href="rules.html">Rules</a></li>
-        <li><a href="strategy.html">Strategy</a></li>
-        <li><a href="professionals.html">Professionals</a></li>
-    </ul>
-
+    <div class="navbarContainer">
+        <ul class="navbar">
+            <div class="banner">
+                <a href="index.html">
+                <img src="Images/banner2.png" alt="">
+                </a>
+            </div>
+            <li onclick="window.location.href='index.html'"><a href="index.html">Home</a></li>
+            <li onclick="window.location.href='openings.html'"><a href="openings.html">Openings</a></li>
+            <li onclick="window.location.href='rules.html'"><a href="rules.html">Rules</a></li>
+            <li onclick="window.location.href='strategy.html'"><a href="strategy.html">Strategy</a></li>
+            <li onclick="window.location.href='professionals.html'"><a href="professionals.html">Professionals</a></li>
+            
+        </ul>
+    </div>
+<div class="wrapper">
     <form id="yesOrNo">
         <h2>Master the terminology first before checking the tips!</h2>
         <button class="button" id="terminologyYes">Study chess terminology!</button>
@@ -281,7 +284,7 @@
             </li>
         </ul>   
     </form>
-
+</div>
     <script src="./strategy.js"></script>
 </body>
 </html>
