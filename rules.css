@@ -57,8 +57,9 @@ label {
     font-size: 20px;
 }
 #setup img {
-    max-width: 30vw;
-    padding: 1vw;
+    box-shadow: 0 0px 6px 1px #272525;
+    max-width: 35vw;
+    padding: 0;
 }
 
 .container header{
@@ -81,16 +82,19 @@ label {
 }
 #rules {
     padding: 2vw;
-    text-justify: center;
-    text-align: justify;
+    text-align: center;
 }
 #rules h4 {
+    padding: 0;
+    text-align: left;
+    font-size:1vw;
     font-family: Gotham-Light;
 }
 
 #rules h2, h1{
+    font-size: 2vw;
     padding: 1vw;
-    border-bottom: 2px solid #fff4ec;
+    border: none;
 }
 .piecesContent {
     margin: 0 auto !important;
@@ -103,20 +107,28 @@ label {
     transition: max-height 0.3s ;
     scroll-snap-type: mandatory;
 }
-.piecesContent p, h1{
-    margin: 1vw auto;
-    width: 60%;
+#pieces {
+    max-width: 60%;
+    margin-left: 25vw;
+}
+.piecesContent h1{
+    border: none;
     padding: 0;
-    text-align: center;
 }
 .piecesContent img{
     padding: 0;
-    max-width: 20vw;
+    max-width: 30vw;
     border-radius: 0.5rem;
     scroll-snap-type: mandatory;
 }
-
+#buttons button{
+    font-size: 1vw;
+}
+#buttons p {
+    font-size: 1vw;
+}
 .piecesBtn{
+    font-size: 1vw;
     background-color: #a5a0ca;
     cursor: pointer;
     border-radius: 0.5rem;
@@ -149,7 +161,7 @@ label {
 /* -Adding the optimization for mobile devices- */
 @media (max-width:858px){
 
-
+    
 
     form{
         
@@ -160,11 +172,108 @@ label {
         
     }
     
+    #setup img {
+        max-width: 80vw;
+        padding: 0;
+        margin: 5vw 0 !important;
+    }
+    .piecesContent h1 {
+        border: none;
+        padding: 0;
+        text-align: center !important;
+        margin-right: 0;
+    }
+    .piecesContent {
+        text-align: right !important;
+    }
+    .piecesBtn {
+        padding: 3vw;
+        margin: 1vw;
+    }
+    .piecesContent p {
+        text-align: center !important;
+        margin-right: 0;
+        padding: 3vw;
+        font-size: 3.5vw;
+    }
+    .piecesContent img{
+        padding: 0;
+        max-width: 60vw;
+        border-radius: 0.5rem;
+        scroll-snap-type: mandatory;
+    }
+
     h1 {
-        font-size: 3vw;
+        padding: 2vw;
+        font-size: 4vw;
     }
     h2 {
+        padding: 2vw;
+        text-align: center;
+        font-size: 4vw;
+    }
+    h4 {
+        
+        text-align: left;
         padding: 0;
-        font-size: 1vw;
+        line-height: 1;
+        letter-spacing: 1px;
+        font-size: 2vw;
+    }
+}
+@media (max-width:450px){
+    
+    #buttons button{
+        font-size: 3vw;
+        padding: 3vw;
+    }
+
+    #setup img {
+        max-width: 80vw;
+        padding: 0;
+        margin: 5vw 0 !important;
+    }
+    .piecesContent h1 {
+        border: none;
+        padding: 0;
+        text-align: center !important;
+        margin-right: 0;
+    }
+    .piecesContent {
+        text-align: right !important;
+    }
+    .piecesBtn {
+        padding: 3vw;
+        margin: 1vw;
+    }
+    .piecesContent p {
+        text-align: center !important;
+        margin-right: 0;
+        padding: 3vw;
+        font-size: 3.5vw;
+    }
+    .piecesContent img{
+        padding: 0;
+        max-width: 60vw;
+        border-radius: 0.5rem;
+        scroll-snap-type: mandatory;
+    }
+
+    h1 {
+        padding: 2vw;
+        font-size: 5vw;
+    }
+    h2 {
+        padding: 2vw;
+        text-align: center;
+        font-size: 4vw;
+    }
+    h4 {
+        
+        text-align: left;
+        padding: 1vw;
+        line-height: 1.2;
+        letter-spacing: 1px;
+        font-size: 3.5vw;
     }
 }
