@@ -20,31 +20,106 @@ body {
 }
 
 * {
+    color: #fff4ec;
     box-sizing: border-box;
     font-family: Gotham, sans-serif;
   }
 
 .container{
-    padding: 1rem;
-}
-
-h4 {
-    margin: 0 auto;
-    padding: 1rem;
-    text-align:justify;
-    max-width: 100%;
-
-}
-#chessFront{
+    padding: 0;
     justify-content: center;
     text-align: center;
-    max-width: 50%;
-    margin: 0 auto;
-    padding: 2rem;
-    background-color: #464359;
-    border-radius: 1rem;
-    color:#fff4ec;
+    
 }
+
+
+.learnChess{
+    background-color: #6f6a8d;
+    padding: 1vw;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 1rem;
+    box-shadow:0 -1px 6px 1px #303030;
+}
+.learnChess h1{
+    border-bottom: 2px solid #fff4ec;
+    max-width: 50%;
+    line-height:2;
+    margin: 0 auto;
+}   
+
+span {
+    font-family: Gotham-Light;
+}
+h3{
+    font-family: Gotham-Light;
+    text-align:justify;
+    margin: 0 auto;
+    max-width: 80%;
+    font-size: 0.8vw;
+}
+.listh3 span {
+    display: none;
+}
+h4 {
+    font-size: 0.6vw;
+    text-align: center;
+    margin: 2vw auto;
+}
+a { 
+    border: none;
+    margin: 0 auto;
+    cursor: pointer;
+    color: #ffc79f;
+    text-decoration: none;
+}
+h1 {
+    font-size: 1.2vw;
+}
+h2 {
+    font-size: 0.9vw;
+    padding: 1vw;
+    line-height: 1.2;
+}
+
+
+
+.containerFront{
+    padding: 1vw;
+}
+.learnChess h2{
+    padding-top: 2vw;
+}   
+#firstContainer h1 {
+    text-align: center;
+}
+#firstContainer h2 {
+    text-align: justify;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+#firstContainer {
+    text-align: justify;
+    background-color: #464359;
+    max-width: 50%;
+    border-radius: 1rem;
+    margin-left: 25vw;
+    padding-bottom: 4vw;
+    transform: translateY(9vw);
+    z-index: 3;
+    position: relative;
+}
+#secondContainer {
+    max-width: 50%;
+    border-radius: 1rem;
+    text-align: center;
+    z-index: 5;
+    margin-left: 25vw;
+    position: relative;
+    
+}
+
 
 .homeImage {
     padding: 0;
@@ -54,15 +129,98 @@ h4 {
     max-width: 80%;
 }
 
+/* Hover animations*/
+
+@keyframes flicker {
+    0% {
+        color: #fff4ec;
+    }
+    50% {
+        color: rgb(255, 223, 118)
+    }
+    100% {
+        color: #fff4ec;
+    }
+}
+h3:hover {
+    cursor:pointer;
+}
+h3:hover::after {
+    font-size: 1vw;
+    margin-left: 1vw;
+    content: "Click me!";
+    animation: flicker 1s infinite ease-in-out;
+    font-family: Gotham-Black;
+    
+}
+
+#firstContainer.blur {
+    filter: blur(1.5px) brightness(70%);
+    transition: 0.2s;
+
+}
+#firstContainer.transform {
+    transform: translateY(4vw);
+    transition: 0.2s ease-in-out;
+}
+
+#secondContainer.blur {
+    filter: blur(1.5px) brightness(70%);
+    transition:0.2s;
+}
+#secondContainer.transform {
+    transform: translateY(4vw);
+    transition: 0.2s ease-in-out;
+}
 
 
 @media only screen and (max-width:858px){
 
-    form{
-        max-width: 100% !important;
-        margin: 0 auto;
-        
-
+    .container {
+        margin-top: 3vw;
+        padding: 0;
+    }
+   #firstContainer{
+    transform: translateY(2vw);
+    margin: 0 auto;
+    max-width: 100%;
+   }
+   #secondContainer {
+    max-width: 100%;
+    margin: 0 auto;
+   }
+   #firstContainer.blur {
+    filter: blur(0) brightness(100%)
+   }
+   #firstContainer.transform {
+    transform: translateY(2vw);
+    
+    }
+    #secondContainer.blur {
+        filter: blur(0) brightness(100%);
+        transition:0.2s;
+    }
+    h3:hover::after {
+        content: "";
     }
 
+    /* Styling the text to be more responsive*/
+
+    h1 {
+        font-size: 3vw;
+    }
+    #firstContainer h2{
+        font-size: 2vw;
+    }
+    h2{
+        font-size: 3vw;
+    }
+    h3{
+        font-size: 2vw;
+        max-width: 70%;
+    }
+    h4 {
+        padding-top: 4vw;
+        font-size: 2vw;
+    }
 }
