@@ -20,9 +20,14 @@ html {
 /* -For desktop use- */
 
 body {
-    background-color: #d2cae5;
-
+    background-image: url(Images/backgroundimage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    overflow:auto;
 }
+
 * {
     color: #fff4ec;
     box-sizing: border-box;
@@ -38,42 +43,73 @@ h3{
     font-size: 10pt;
 }
 img{
-    max-width: 100%;
-    height: auto;
-    border-radius: 0.5rem;
+    max-width: 45vw;
+    border-radius: 1vw;
+    margin-top: 1vw;
 }
 
 form {
     background-color: #464359;
     border-radius: 1rem;
-    max-width: 80%;
-    margin: 2vw;
-    margin-left: 15vw;
+    max-width: 60%;
+    margin: 0;
+    margin-left: 20vw;
     padding: 1rem;
     justify-content: center;
     text-align: center;
-    overflow: hidden;
+    
   }
 
 h2{
+    padding: 1vw;
+    margin: 0 auto;
+    max-width: 80%;
     text-align: center;
-    margin: 2rem;
 }
  p{
+    max-width: 70%;
     text-align: center;
-    padding: 0 5rem;
-    text-justify: inter-word;
-    margin: 2rem;
+    padding: 1vw;
+    padding-bottom: 0.5vw;
+    margin: 0 auto;
+}
+#openings {
+    padding-bottom: 2vw;
+    z-index: 3;
+    position: relative !important;
+}
+#whiteOp, #blackOp {
+    box-shadow: 2px -5px 20px #0000004f;
+    padding-bottom:3vw;
+    z-index: 5;
+    margin-top: -1.5vw ;
+    position: relative !important;
+}
+ #formCExc,#formCAdv {
+    padding-top: 2vw;
+    box-shadow: 2px -5px 20px #0000004f;
+    padding-bottom:2vw;
+    z-index: 8;
+    margin-top: -1.5vw ;
+    position: relative !important;
 }
 
-.difficultyContainer{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    justify-content: space-between;
-    align-items: center;
-    
+#variationsCaro {
+    box-shadow: 2px -5px 20px #0000004f;
+    padding-bottom:3vw;
+    z-index: 6;
+    margin-top: -1.5vw ;
+    position: relative !important;
 }
+#formL, #formQ, #formR {
+
+    box-shadow: 2px -5px 20px #0000004f;
+    margin-top: -1.5vw ;
+    padding-top:2vw ;
+    z-index: 7;
+    position: relative ;
+}
+
 #formCExc h1{
     font-size: 30px;
     text-decoration: underline;
@@ -144,7 +180,10 @@ h2{
 
 /* -Adding the optimization for mobile devices- */
 @media (max-width:859px){
-
+    
+    .wrapper {
+        margin-top: 2vw !important;
+    }
 header {
     font-size: 5vw !important;
     padding: 2vw !important;
@@ -168,20 +207,22 @@ h2{
     font-size: 2vw;
 }
 form {        
+    
     max-width: 100%;
-    margin: 1rem 0;
-    padding: 1rem;
-    border: 0;
+    margin:  0 auto;
+
 }
 }
 @media (max-width:460px){
+
     h1 {
-        font-size: 5vw;
+        font-size: 4vw;
     }
     h2{
+        max-width: 120%;
         margin: 0 auto !important;
-        padding: 3vw;
+        padding: 2vw;
         text-align: justify !important;
-        font-size: 4vw;
+        font-size: 3vw;
     }
 }

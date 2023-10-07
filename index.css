@@ -25,12 +25,6 @@ body {
     font-family: Gotham, sans-serif;
   }
 
-.container{
-    padding: 0;
-    justify-content: center;
-    text-align: center;
-    
-}
 
 
 .learnChess{
@@ -49,11 +43,12 @@ body {
 }   
 
 span {
+    margin: 0 auto;
     font-family: Gotham-Light;
 }
 h3{
     font-family: Gotham-Light;
-    text-align:justify;
+    text-align:left;
     margin: 0 auto;
     max-width: 80%;
     font-size: 0.8vw;
@@ -66,7 +61,7 @@ h4 {
     text-align: center;
     margin: 2vw auto;
 }
-a { 
+.containerFront a { 
     border: none;
     margin: 0 auto;
     cursor: pointer;
@@ -77,8 +72,10 @@ h1 {
     font-size: 1.2vw;
 }
 h2 {
+    margin-left: 2vw;
+    text-align: left;
     font-size: 0.9vw;
-    padding: 1vw;
+    padding: 0.5vw;
     line-height: 1.2;
 }
 
@@ -102,32 +99,28 @@ h2 {
 #firstContainer {
     text-align: justify;
     background-color: #464359;
-    max-width: 50%;
+    max-width: 60%;
     border-radius: 1rem;
-    margin-left: 25vw;
+    margin-left: 20vw;
     padding-bottom: 4vw;
     transform: translateY(9vw);
     z-index: 3;
+    margin-top: 0;
     position: relative;
 }
 #secondContainer {
-    max-width: 50%;
+    max-width: 60%;
     border-radius: 1rem;
     text-align: center;
     z-index: 5;
-    margin-left: 25vw;
+    margin-top: 0;
+    margin-left: 20vw;
     position: relative;
     
 }
 
 
-.homeImage {
-    padding: 0;
-    margin: 0 auto;
-    border-radius: 0.5rem;
-    border: #5e4c6e 0.5rem solid;
-    max-width: 80%;
-}
+
 
 /* Hover animations*/
 
@@ -146,11 +139,12 @@ h3:hover {
     cursor:pointer;
 }
 h3:hover::after {
-    font-size: 1vw;
-    margin-left: 1vw;
-    content: "Click me!";
+    letter-spacing: 2px;
+    margin-left: 2vw;
+    content: "CLICK ME!";
     animation: flicker 1s infinite ease-in-out;
     font-family: Gotham-Black;
+
     
 }
 

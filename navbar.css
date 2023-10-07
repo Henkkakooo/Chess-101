@@ -10,6 +10,7 @@ body, html {
 }
 
 .navbarContainer {
+    box-shadow: inset 0 0px 4px 2px #000000;
     margin: 0;
     padding: 0;
     position: fixed;
@@ -17,7 +18,6 @@ body, html {
 }
 
 .navbar{
-    box-shadow: inset 0 0px 4px 2px #31303f;
     display:block;
     text-align: left;
     justify-content: space-evenly;
@@ -57,6 +57,9 @@ body, html {
     background-color:  #e4d1b0;
     color: #1c1a16;
 
+}
+.banner2 {
+    display: none;
 }
 .banner {
     text-align: left !important;
@@ -130,26 +133,58 @@ body, html {
 
 @media only screen and (max-width:420px){
 
+    .banner2 img {
+        padding: 0;
+        max-width: 25vw;
+        border: none;
+        filter: invert();
+    }
+    .banner2 {
+        position: relative;
+        margin-top: 0% !important;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        display: block;
+        border: none;
+        background-color:#464359 ;
+        text-align: center !important;
+        margin: 0 auto;
+        z-index: 2;
+    
+    }
     .banner{
         display: none;
         
     }
     .navbar li {
-        margin: 0;
-        padding-top: 5vw;
-        padding-bottom: 5vw;
+        border: none;
+        margin: 0 auto;
+        padding-bottom: 2vw;
         
     }
     .navbar li a {
+        margin: 0 auto;
         font-size: 3vw;
         padding: 0;
-        margin: 2vw;
+        max-width: 100%;
+        max-height: 100%;
+        line-height: normal;
+        
+    }
+    .navbarContainer{
+        padding: 0;
+        max-width: 100%;
+        
+        
     }
     .navbar {
+        position: relative;
+        z-index: 4;
+        margin-top: -1vw !important;
+        justify-content: space-between;
+        padding-top: 2vw;
         margin: 0;
-        text-align: center;
-        justify-content: space-around;
-        padding: 3vw;
+        padding-bottom: 3vw;
     }
 
 }

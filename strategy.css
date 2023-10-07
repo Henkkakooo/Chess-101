@@ -12,7 +12,11 @@
 }
 
 body {
-  background-color: #d2cae5;
+  background-image: url(Images/backgroundimage.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
 }
 * {
     color:#fff4ec;
@@ -24,16 +28,16 @@ body {
 form {
   background-color: #464359;
   border-radius: 1rem;
-  margin-top: 30px;
-  max-width: 80%;
-  margin: 2vw;
-  margin-left: 15vw;
+  max-width: 60%;
+  margin: 0;
+  margin-left: 20vw;
   padding: 1rem;
   justify-content: center;
   text-align: center;
-  overflow: hidden;
 }
-
+#yesOrNo {
+  padding-bottom: 2vw;
+}
 #terminologyNo{
   background-color:#aa7e4b;
 }
@@ -88,16 +92,52 @@ form {
   text-align: justify;
   text-justify: inter-word;
 }
+.strategy {
+  padding-bottom: 3vw;
+}
 .headerContainer {
   background-color: #464359;
   padding: 2rem;
-  border: none;
+  border-radius: 1vw;
   margin: 0 auto;
+  padding-bottom: 3vw;
+}
+.buttonsContainer {
+  padding-top: 2vw;
 }
 .tipsContainer {
+  margin-top: -1.5vw ;
+  position: relative !important;
+  box-shadow: 2px -5px 20px #0000004f;
+  background-color: #6f6a8d;
+  padding-top:2vw;
+  border-radius: 1vw;
+  padding-bottom: 2vw;
   padding: 0;
+  z-index: 5;
 }
+.ulListContainer {
+  margin-top: -1.5vw ;
+  position: relative !important;
+  box-shadow: 2px -5px 20px #0000004f;
+  background-color: #6f6a8d;
+  padding-top:2vw;
+  border-radius: 1vw;
+  padding-top: 1vw;
+  padding-bottom: 2vw;
+  z-index: 6;
+}
+.listContainer {
+  margin-top: -1.5vw ;
+  position: relative !important;
+  box-shadow: 2px -5px 20px #0000004f;
+  background-color: #6f6a8d;
+  padding-top:2vw;
+  border-radius: 1vw;
+  padding-bottom: 2vw;
+  z-index: 5;
 
+}
 .termsh3{
   padding: 0 1rem;
   text-align: left;
@@ -111,14 +151,20 @@ form {
   transition: 0.2s ease !important;
 }
 .termsHeader{
+  margin: 0 auto;
+  max-width: 80%;
+  line-height: 1.5;
   text-align: center ;
   padding: 1rem;
 }
 .termsInner{
+  border-radius: 1vw;
   padding: 1rem;
   background-color: #464359;
+  padding-bottom: 2vw;
 }
 .termsForm{
+  border-radius: 1vw;
   padding: 0;
   background-color: #6f6a8d;
   line-height: 110%;
@@ -166,31 +212,53 @@ form {
   /* -Adding the optimization for mobile devices- */
 @media (max-width:859px){
 
+  #yesOrNo button {
+    font-size: 3vw !important;
+  }
+
   h4 {
-    font-size: 2vw;
+    font-size: 3%;
     padding: 0;
     margin: 0 auto;
   }
   .listh3 {
-    font-size: 2vw;
+    font-size: 3.5vw;
+  }
+  .strategy button {
+    font-size: 3vw !important;
+    
+  }
+  .strategy {
+    padding-bottom: 7vw !important;
+    margin-bottom: 0;
+  }
+  .buttonsContainer {
+    padding: 1vw;
+    display: flex;
+  }
+  .tipsContainer {
+    margin-top: -4vw;
+  }
+  .headerContainer {
+    padding-bottom: 4vw !important;
   }
     h3 {
-      font-size: 2vw;
-      padding: 2vw;
+      font-size: 3vw;
+      padding: 1vw;
       margin: 2vw auto;
     }
     .headerContainer h1{
-      font-size: 6vw;
+      font-size: 4vw;
     }
     .headerContainer h2{
-      font-size: 4vw;
+      font-size: 3vw;
     }
     .headerContainer {
       padding: 1rem;
       margin: 0 auto;
     }
     .listh2 {
-      font-size: 4vw;
+      font-size: 3vw;
       padding: 1vw ;
       margin: 0 auto;
     }
@@ -198,11 +266,18 @@ form {
     .terms {
       font-size: 3vw;
     }
-    
-    h2, .termsHeader {
+    h2 {
       font-size: 3vw;
-      padding: 0.5rem;
-      margin: 0 auto;
+    }
+    
+    .termsHeader{
+      text-align: center;
+      max-width: 100% !important;
+      padding-bottom: 2vw;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 0;
+      margin: 0 !important;
     }
     form{
         max-width: 100%;

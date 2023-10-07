@@ -15,7 +15,11 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background-color: #d2cae5;
+    background-image: url(Images/backgroundimage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
 }
 * {
     color: #fff4ec;
@@ -26,13 +30,12 @@ body {
   form {
     background-color: #464359;
     border-radius: 1rem;
-    max-width: 80%;
-    margin: 2vw ;
-    margin-left: 15vw;
-    padding: 2vw;
+    max-width: 60%;
+    margin: 0;
+    margin-left: 20vw;
+    padding: 1rem;
     justify-content: center;
     text-align: center;
-    overflow: hidden;
   }
 img{
     height: auto;
@@ -50,6 +53,9 @@ label {
     line-height: 120%;
     text-align: justify;
     justify-content: space-around;
+}
+#setup {
+    background-color:#b18863 ;
 }
 #setup p {
     text-align: center;
@@ -91,11 +97,7 @@ label {
     font-family: Gotham-Light;
 }
 
-#rules h2, h1{
-    font-size: 2vw;
-    padding: 1vw;
-    border: none;
-}
+
 .piecesContent {
     margin: 0 auto !important;
     max-height: 0;
@@ -105,35 +107,68 @@ label {
     text-align: center;
     padding: 0;
     transition: max-height 0.3s ;
-    scroll-snap-type: mandatory;
 }
-#pieces {
-    max-width: 60%;
-    margin-left: 25vw;
-}
+
 .piecesContent h1{
     border: none;
     padding: 0;
+    margin: 0 auto;
 }
 .piecesContent img{
     padding: 0;
     max-width: 30vw;
-    border-radius: 0.5rem;
-    scroll-snap-type: mandatory;
+    border-radius: 1vw;
 }
-#buttons button{
-    font-size: 1vw;
-}
+
 #buttons p {
     font-size: 1vw;
 }
+#buttons {
+    padding-bottom: 2vw;
+    z-index: 3;
+    
+
+}
+#pieces {
+    background-color:#b18863 ;
+    box-shadow: 2px -5px 20px #0000004f;
+    margin-top: -1.5vw ;
+    z-index: 5;
+}
+#setup{
+    box-shadow: 2px -5px 20px #0000004f;
+    margin-top: -1.5vw ;
+    z-index: 5;
+}
+#rules {
+    background-color:#b18863 ;
+    box-shadow: 2px -5px 20px #0000004f;
+    margin-top: -1.5vw ;
+    z-index: 5;
+}
+#rules h1 {
+    padding: 0;
+    font-size: 1.5vw;
+}
+#rules h2 {
+    font-size: 1.5vw;
+
+}
+#rules h3 {
+    margin: 0 auto;
+    max-width: 80%;
+    text-align: left;
+    font-size: 0.8vw;
+}
+
+
+
 .piecesBtn{
-    font-size: 1vw;
-    background-color: #a5a0ca;
+    background-color: #4b3c2f;
     cursor: pointer;
     border-radius: 0.5rem;
     border: 0;
-    display: flex;
+    display: block;
     padding: 1rem;
     margin: 10px 0;
     animation-name: button;
@@ -142,7 +177,7 @@ label {
 }
 
 .piecesBtn:hover{
-    background-color:#b18863;
+    background-color:#72573f;
     cursor: pointer;
     color: aliceblue;
     transform: translateY(-3px);
@@ -153,25 +188,30 @@ label {
     border-color: #99624c;
     color: aliceblue;
 }
-.piecesBtn:after{
-    scroll-snap-type: mandatory;
-}
+
 /* ---- */
 
 /* -Adding the optimization for mobile devices- */
 @media (max-width:858px){
 
-    
+    .wrapper {
+        margin-top: 2vw !important;
+    }
 
     form{
         
         max-width: 100%;
-        margin: 2vw 0;
+        margin:  0;
         padding: 2vw;
         border: 0;
         
     }
-    
+    p {
+        font-size: 3vw !important;
+    }
+    #rules {
+        padding-bottom: 5vw !important;
+    }
     #setup img {
         max-width: 80vw;
         padding: 0;
@@ -198,27 +238,31 @@ label {
     }
     .piecesContent img{
         padding: 0;
+        text-align: center;
+        margin: 0 auto;
         max-width: 60vw;
         border-radius: 0.5rem;
-        scroll-snap-type: mandatory;
+        
     }
-
+    .piecesContent {
+        text-align: center !important;
+    }
     h1 {
-        padding: 2vw;
-        font-size: 4vw;
+        padding: 4vw;
+        font-size: 4vw !important;
     }
     h2 {
         padding: 2vw;
         text-align: center;
-        font-size: 4vw;
+        font-size: 3vw !important;
     }
-    h4 {
-        
+    h3 {
+        font-family: Gotham-Light;
         text-align: left;
         padding: 0;
         line-height: 1;
         letter-spacing: 1px;
-        font-size: 2vw;
+        font-size: 2.5vw !important;
     }
 }
 @media (max-width:450px){
@@ -227,7 +271,7 @@ label {
         font-size: 3vw;
         padding: 3vw;
     }
-
+   
     #setup img {
         max-width: 80vw;
         padding: 0;

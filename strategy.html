@@ -10,6 +10,11 @@
 </head>
 <body>
     <div class="navbarContainer">
+        <div class="banner2">
+            <a href="index.html">
+            <img src="Images/banner2.png" alt="">
+            </a>
+        </div>
         <ul class="navbar">
             <div class="banner">
                 <a href="index.html">
@@ -33,12 +38,16 @@
     </form>
     <form class="termsForm" id="termsForm" style="display:none;">
         <div class="termsInner">
-            <button class="button" id="termsBack">Show Strategies</button>
+            
+            <h1>The Glossary of Chess</h1>
             <h2 class="termsHeader">
-                Here's all the necessary terminology for a beginner
+                Here you'll find all the necessary terminology
+                to get started with chess!
+                Click any of the phrases listed below you want to know more about.
             </h2>
+            <button class="button" id="termsBack">Show Strategies & Tips</button>
         </div>
-        
+        <div class="listContainer">
         <ul class="terms">
             <li class="termsList">
                 <h3 class="termsh3" onclick="showH4(this)">Absolute pin</h3>
@@ -123,6 +132,7 @@
                 </h4>
             </li>
         </ul>
+    </div>
         <!-- 
         <h2>Try your knowledge by playing a guessing game!</h2>
         <button class="button" id="termGameBtn">Start Game!</button>
@@ -166,20 +176,21 @@
             middle game
             and the end game phase.
         </h2>
-        <button id="openingBtn" class="button">Opening tips</button>
-        <button id="middleBtn" class="button">Midlle game tips</button>
-        <button id="endGameBtn" class="button">End game tips</button>
+        <div class="buttonsContainer">
+            <button id="openingBtn" class="button">Opening tips</button>
+            <button id="middleBtn" class="button">Midlle game tips</button>
+            <button id="endGameBtn" class="button">End game tips</button>
+        </div>
     </form>
     
     
     <form id="openingForm" class="tipsContainer" style="display:none;">
         <div class="headerContainer">
             <h1>Opening Tips</h1>
-            <h2>Click the list item to show more!</h2>
+            <h2>Click on any of the tips below to see more!</h2>
         </div>
-            
+        <div class="ulListContainer">
         <ul class="ulList">
-            
             <li class="formList" >
                 <h2 class="listh2" onclick="showH3(this)">Defend your pieces </h2>
                 <h3 class="listh3" style="display:none;">
@@ -217,14 +228,16 @@
                 </h3>   
             </li>
         </ul>
+    </div>
     </form>
 
 
     <form id="middleForm" class="tipsContainer" style="display:none;">
         <div class="headerContainer">
             <h1>Middle Game tips</h1>
-            <h2>Click the list item to show more!</h2>
+            <h2>Click on any of the tips below to see more!</h2>
         </div>
+        <div class="ulListContainer">
         <ul class="ulList">
             <li class="formList">
                 <h2 class="listh2" onclick="showH3(this)">Notice unguarded squares</h2>
@@ -249,15 +262,17 @@
                     and make sure it's profitable before going through with your plan.
                 </h3>
             </li>
-        </ul>   
+        </ul>
+    </div>   
     </form>
 
 
     <form id="endGameForm" class="tipsContainer" style="display:none;">
         <div class="headerContainer">
             <h1>End Game tips</h1>
-            <h2>Click the list item to show more!</h2>
+            <h2>Click on any of the tips below to see more!</h2>
         </div>
+        <div class="ulListContainer">
         <ul class="ulList">
             <li class="formList">
                 <h2 class="listh2" onclick="showH3(this)">Hold on to past pawns</h2>
@@ -284,6 +299,7 @@
             </li>
         </ul>   
     </form>
+</div>
 </div>
     <script src="./strategy.js"></script>
 </body>
