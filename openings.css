@@ -181,6 +181,18 @@ h2{
 /* -Adding the optimization for mobile devices- */
 @media (max-width:859px){
     
+
+    #openings {
+        padding-bottom: 8vw;
+    }
+    #whiteOp, #blackOp, #variationsCaro {
+        margin-top: -6vw ;
+        padding-top: 4vw !important;
+        padding-bottom: 6vw !important;
+    }
+    .openingContainer, #formCAdv, #formCExc {
+        margin-top: -4vw !important;
+    }
     .wrapper {
         margin-top: 2vw !important;
     }
@@ -188,23 +200,36 @@ header {
     font-size: 5vw !important;
     padding: 2vw !important;
 }
-p{
-    margin: 0 auto;
-    font-size: 3vw !important;
-    padding: 2vw !important;
+button {
+    font-size: 2.5vw !important;
+}
+.controlBtns {
+    padding-top: 1vw;
+}
+.controlBtns a {
+    margin: 1vw;
 }
 .kann h1{
     font-size: 5vw !important;
     padding: 2vw !important;
 }
 h1 {
-    font-size: 3vw;
+    font-size: 4vw;
+}
+p {
+    padding: 2vw;
+    max-width: 100% !important;
+    text-align: center ;
+}
+img:not(.banner){
+    max-width: 80vw;
 }
 h2{
+    max-width: 100%;
     margin: 0 auto !important;
     padding: 3vw;
     text-align: justify !important;
-    font-size: 2vw;
+    font-size: 3vw;
 }
 form {        
     
@@ -215,13 +240,33 @@ form {
 }
 @media (max-width:460px){
 
+    #whiteOp, #blackOp, #variationsCaro {
+        margin-top: -6vw ;
+        padding-top: 4vw !important;
+        padding-bottom: 8vw !important;
+    }
+    .openingContainer, #formCAdv, #formCExc {
+        margin-top: -5vw !important;
+    }
+    .openingsContainer form {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+    button {
+        font-size: 3vw !important;
+    }
     h1 {
         font-size: 4vw;
     }
     h2{
-        max-width: 120%;
+        line-height: 1.3;
+        letter-spacing: 1.3px;
+        max-width: 100;
         margin: 0 auto !important;
-        padding: 2vw;
+        padding-top: 3vw !important;
+        padding-bottom: 3vw !important;
+        padding: 0;
         text-align: justify !important;
         font-size: 3vw;
     }

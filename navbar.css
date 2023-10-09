@@ -80,7 +80,8 @@ body, html {
 
 
 @media only screen and (max-width:858px){
-    
+
+
     .wrapper {
         padding: 0;
     }
@@ -90,6 +91,7 @@ body, html {
         height: 100%;
     }
     .navbar {
+        padding-bottom: 2vw !important;
         justify-content: left;
         position: static;
         display: flex;
@@ -103,6 +105,7 @@ body, html {
         margin-top: 5vw;
         margin-left: 0;
         margin-right: 0;
+        padding-right: 0 !important;
         padding: 1vw;
         max-width: 20vw;
     }
@@ -120,9 +123,11 @@ body, html {
 
     }
     .navbar li a {
-        margin: 0 auto;
-        font-size: 2vw;
-        padding: 3vw;
+        letter-spacing: 1.6px !important;
+        font-family: Gotham-black;
+        margin: 0;
+        font-size: 2.5vw;
+        padding: 1.5vw;
         
     }
       .navbar li.banner {
@@ -131,7 +136,7 @@ body, html {
       }
     }
 
-@media only screen and (max-width:420px){
+@media only screen and (max-width:460px){
 
     .banner2 img {
         padding: 0;

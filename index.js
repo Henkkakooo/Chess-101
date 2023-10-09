@@ -14,14 +14,14 @@ function expand(h3Element) {
 
   firstContainer.addEventListener('mouseover', () =>  {
     secondContainer.classList.add('blur');
-    firstContainer.classList.add("transform");
+    secondContainer.classList.add('transform')
     
 
   });
   firstContainer.addEventListener('mouseout', () => {
 
     secondContainer.classList.remove('blur');
-    firstContainer.classList.remove("transform");
+    secondContainer.classList.remove("transform");
   });
 
   secondContainer.addEventListener('mouseover', () => {

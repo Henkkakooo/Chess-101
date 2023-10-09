@@ -206,11 +206,15 @@ label {
         border: 0;
         
     }
+    #buttons {
+        padding-bottom: 8vw;
+    }
     p {
         font-size: 3vw !important;
     }
-    #rules {
-        padding-bottom: 5vw !important;
+    #rules, #pieces, #setup {
+        margin-top: -5vw;
+        padding-bottom: 8vw !important;
     }
     #setup img {
         max-width: 80vw;
@@ -265,13 +269,22 @@ label {
         font-size: 2.5vw !important;
     }
 }
-@media (max-width:450px){
-    
-    #buttons button{
-        font-size: 3vw;
-        padding: 3vw;
+@media (max-width:460px){
+
+
+    #buttons {
+        padding-bottom: 10vw;
+
     }
-   
+    #rules, #pieces, #setup {
+        margin-top: -6vw;
+    }
+
+    #buttons button{
+        font-size: 3vw !important;
+        padding: 2.5vw;
+    }
+
     #setup img {
         max-width: 80vw;
         padding: 0;
@@ -304,13 +317,17 @@ label {
     }
 
     h1 {
-        padding: 2vw;
-        font-size: 5vw;
+        padding: 4vw;
+        font-size: 5vw  !important;
     }
     h2 {
         padding: 2vw;
         text-align: center;
-        font-size: 4vw;
+        font-size: 4vw !important;
+    }
+    h3 {
+        max-width: 90% !important;
+        font-size: 3vw !important;
     }
     h4 {
         

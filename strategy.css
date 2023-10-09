@@ -213,19 +213,21 @@ form {
 @media (max-width:859px){
 
   #yesOrNo button {
-    font-size: 3vw !important;
+    font-size: 2vw !important;
   }
-
+  .termsInner {
+    padding-bottom: 4vw;
+  }
   h4 {
-    font-size: 3%;
+    font-size: 3vw;
     padding: 0;
     margin: 0 auto;
   }
   .listh3 {
-    font-size: 3.5vw;
+    font-size: 3vw;
   }
   .strategy button {
-    font-size: 3vw !important;
+    font-size: 2vw !important;
     
   }
   .strategy {
@@ -233,8 +235,10 @@ form {
     margin-bottom: 0;
   }
   .buttonsContainer {
+    margin: 0 auto !important;
+    text-align: center !important;
     padding: 1vw;
-    display: flex;
+  
   }
   .tipsContainer {
     margin-top: -4vw;
@@ -285,4 +289,30 @@ form {
         padding: 1rem;
         border: 0;
     }
+}
+@media (max-width:460px){
+  h2 {
+    font-size: 3vw;
+  }
+  .wrapper button {
+    font-size: 3vw !important;
+  }
+  #yesOrNo h2 {
+    font-size: 4vw;
+  }
+  .buttonsContainer {
+    display: flex;
+    justify-content: center !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+  }
+  #yesOrNo {
+    padding-bottom: 4vw;
+    text-align: center;
+  }
+  #yesOrNo button {
+    
+    font-size: 3vw !important;
+  }
+
 }
